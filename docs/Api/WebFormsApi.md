@@ -1,4 +1,4 @@
-# OpenAPI\Client\WebFormsApi
+# OpenAPIWebForm\Client\WebFormsApi
 
 All URIs are relative to https://webform-sandbox.finapi.io, except if the operation defines another base path.
 
@@ -27,10 +27,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebFormsApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\WebFormsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -71,7 +71,7 @@ void (empty response body)
 ## `getWebForm()`
 
 ```php
-getWebForm($id): \OpenAPI\Client\Model\WebForm
+getWebForm($id): \OpenAPIWebForm\Client\Model\WebForm
 ```
 
 Get a web form
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebFormsApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\WebFormsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebForm**](../Model/WebForm.md)
+[**\OpenAPIWebForm\Client\Model\WebForm**](../Model/WebForm.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ try {
 ## `getWebForms()`
 
 ```php
-getWebForms($order, $page, $per_page): \OpenAPI\Client\Model\WebFormsPage
+getWebForms($order, $page, $per_page): \OpenAPIWebForm\Client\Model\WebFormsPage
 ```
 
 Get web forms
@@ -146,10 +146,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\WebFormsApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\WebFormsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -177,7 +177,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebFormsPage**](../Model/WebFormsPage.md)
+[**\OpenAPIWebForm\Client\Model\WebFormsPage**](../Model/WebFormsPage.md)
 
 ### Authorization
 

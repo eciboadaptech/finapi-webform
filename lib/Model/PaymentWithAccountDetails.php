@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * PaymentWithAccountDetails Class Doc Comment
  *
  * @category Class
  * @description Parameters for a payment with an account
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,10 +62,10 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
         'batch_booking_preferred' => 'bool',
         'profile_id' => 'string',
         'redirect_url' => 'string',
-        'callbacks' => '\OpenAPI\Client\Model\Callbacks',
-        'sender' => '\OpenAPI\Client\Model\PaymentWithAccountSender',
+        'callbacks' => '\OpenAPIWebForm\Client\Model\Callbacks',
+        'sender' => '\OpenAPIWebForm\Client\Model\PaymentWithAccountSender',
         'instant_payment' => 'bool',
-        'orders' => '\OpenAPI\Client\Model\PaymentWithAccountOrder[]'
+        'orders' => '\OpenAPIWebForm\Client\Model\PaymentWithAccountOrder[]'
     ];
 
     /**
@@ -529,7 +529,7 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets callbacks
      *
-     * @return \OpenAPI\Client\Model\Callbacks|null
+     * @return \OpenAPIWebForm\Client\Model\Callbacks|null
      */
     public function getCallbacks()
     {
@@ -539,7 +539,7 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets callbacks
      *
-     * @param \OpenAPI\Client\Model\Callbacks|null $callbacks callbacks
+     * @param \OpenAPIWebForm\Client\Model\Callbacks|null $callbacks callbacks
      *
      * @return self
      */
@@ -563,7 +563,7 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets sender
      *
-     * @return \OpenAPI\Client\Model\PaymentWithAccountSender
+     * @return \OpenAPIWebForm\Client\Model\PaymentWithAccountSender
      */
     public function getSender()
     {
@@ -573,7 +573,7 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets sender
      *
-     * @param \OpenAPI\Client\Model\PaymentWithAccountSender $sender sender
+     * @param \OpenAPIWebForm\Client\Model\PaymentWithAccountSender $sender sender
      *
      * @return self
      */
@@ -617,7 +617,7 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets orders
      *
-     * @return \OpenAPI\Client\Model\PaymentWithAccountOrder[]
+     * @return \OpenAPIWebForm\Client\Model\PaymentWithAccountOrder[]
      */
     public function getOrders()
     {
@@ -627,7 +627,7 @@ class PaymentWithAccountDetails implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets orders
      *
-     * @param \OpenAPI\Client\Model\PaymentWithAccountOrder[] $orders Payment orders
+     * @param \OpenAPIWebForm\Client\Model\PaymentWithAccountOrder[] $orders Payment orders
      *
      * @return self
      */

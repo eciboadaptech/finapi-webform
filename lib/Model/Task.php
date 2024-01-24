@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Task Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'created_at' => '\DateTime',
-        'type' => '\OpenAPI\Client\Model\TaskType',
-        'status' => '\OpenAPI\Client\Model\TaskStatus',
-        'payload' => '\OpenAPI\Client\Model\TaskPayload'
+        'type' => '\OpenAPIWebForm\Client\Model\TaskType',
+        'status' => '\OpenAPIWebForm\Client\Model\TaskStatus',
+        'payload' => '\OpenAPIWebForm\Client\Model\TaskPayload'
     ];
 
     /**
@@ -404,7 +404,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\TaskType
+     * @return \OpenAPIWebForm\Client\Model\TaskType
      */
     public function getType()
     {
@@ -414,7 +414,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\TaskType $type type
+     * @param \OpenAPIWebForm\Client\Model\TaskType $type type
      *
      * @return self
      */
@@ -431,7 +431,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\TaskStatus
+     * @return \OpenAPIWebForm\Client\Model\TaskStatus
      */
     public function getStatus()
     {
@@ -441,7 +441,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\TaskStatus $status status
+     * @param \OpenAPIWebForm\Client\Model\TaskStatus $status status
      *
      * @return self
      */
@@ -458,7 +458,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\TaskPayload
+     * @return \OpenAPIWebForm\Client\Model\TaskPayload
      */
     public function getPayload()
     {
@@ -468,7 +468,7 @@ class Task implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\TaskPayload $payload payload
+     * @param \OpenAPIWebForm\Client\Model\TaskPayload $payload payload
      *
      * @return self
      */

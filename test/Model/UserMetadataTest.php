@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace OpenAPIWebForm\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description With the migration to PSD2 APIs, a new term called \&quot;User metadata\&quot; (also known as \&quot;PSU metadata\&quot;) has been introduced to the API. This user metadata aims to inform the banking API if there was a real end-user behind an HTTP request or if the request was triggered by a system (e.g. by an automatic batch update). In the latter case, the bank may apply some restrictions such as limiting the number of HTTP requests for a single consent. Also, some operations may be forbidden entirely by the banking API. For example, some banks do not allow issuing a new consent without the end-user being involved. Therefore, the PSU metadata must always be provided for such operations.&lt;br/&gt;&lt;br/&gt;As finAPI does not have direct interaction with the end-user for the background update, it is the client application&#39;s responsibility to provide all the necessary information about the end-user.
- * @package     OpenAPI\Client
+ * @package     OpenAPIWebForm\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Functionality Class Doc Comment
  *
  * @category Class
  * @description Customization of web form functionality
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class Functionality implements ModelInterface, ArrayAccess, \JsonSerializable
         'store_secrets' => 'string',
         'bank_details' => 'string',
         'header' => 'string',
-        'language' => '\OpenAPI\Client\Model\Language',
+        'language' => '\OpenAPIWebForm\Client\Model\Language',
         'skip_confirmation_view' => 'bool',
         'render_account_selection_view' => 'bool',
         'hide_payment_summary' => 'bool'
@@ -695,7 +695,7 @@ class Functionality implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets language
      *
-     * @return \OpenAPI\Client\Model\Language|null
+     * @return \OpenAPIWebForm\Client\Model\Language|null
      */
     public function getLanguage()
     {
@@ -705,7 +705,7 @@ class Functionality implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets language
      *
-     * @param \OpenAPI\Client\Model\Language|null $language language
+     * @param \OpenAPIWebForm\Client\Model\Language|null $language language
      *
      * @return self
      */

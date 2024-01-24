@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace OpenAPIWebForm\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Sender details. When not provided at the API-level, the end-user can search for the IBAN or Bank name or BLZ directly on the Web Form and then initiate the payment.
- * @package     OpenAPI\Client
+ * @package     OpenAPIWebForm\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

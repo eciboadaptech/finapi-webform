@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * WebFormCompletedCallback Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class WebFormCompletedCallback implements ModelInterface, ArrayAccess, \JsonSeri
       */
     protected static $openAPITypes = [
         'web_form_id' => 'string',
-        'status' => '\OpenAPI\Client\Model\WebFormStatus'
+        'status' => '\OpenAPIWebForm\Client\Model\WebFormStatus'
     ];
 
     /**
@@ -347,7 +347,7 @@ class WebFormCompletedCallback implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\WebFormStatus
+     * @return \OpenAPIWebForm\Client\Model\WebFormStatus
      */
     public function getStatus()
     {
@@ -357,7 +357,7 @@ class WebFormCompletedCallback implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\WebFormStatus $status status
+     * @param \OpenAPIWebForm\Client\Model\WebFormStatus $status status
      *
      * @return self
      */

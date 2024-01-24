@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**recipient** | [**\OpenAPI\Client\Model\StandalonePaymentRecipient**](StandalonePaymentRecipient.md) |  |
+**recipient** | [**\OpenAPIWebForm\Client\Model\StandalonePaymentRecipient**](StandalonePaymentRecipient.md) |  |
 **structured_remittance_information** | **string[]** | This attribute is used to submit structured remittance information for the domestic payments. Please refer to the documentation for more details. For more information, please check the &lt;a href&#x3D;\&quot;https://documentation.finapi.io/payments/ Czech-Republic-Domestic-Transfers.3045916711.html\&quot;&gt;FAQ article&lt;/a&gt;. | [optional]
-**amount** | [**\OpenAPI\Client\Model\Amount**](Amount.md) |  |
+**amount** | [**\OpenAPIWebForm\Client\Model\Amount**](Amount.md) |  |
 **purpose** | **string** | The purpose of the transfer transaction | [optional]
 **sepa_purpose_code** | **string** | SEPA purpose code, according to ISO 20022, external codes set.&lt;br/&gt;Please note that the SEPA purpose code may be ignored by some banks. | [optional]
 **end_to_end_id** | **string** | End-To-End ID for the transfer transaction. | [optional]

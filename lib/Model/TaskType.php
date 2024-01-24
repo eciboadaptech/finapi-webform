@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace OpenAPIWebForm\Client\Model;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * TaskType Class Doc Comment
  *
  * @category Class
  * @description &lt;strong&gt;Task type:&lt;/strong&gt;&lt;br/&gt;&amp;bull; &lt;code&gt;BANK_CONNECTION_UPDATE&lt;/code&gt; - task was created for updating a bank connection (service \&quot;&lt;a href&#x3D;&#39;#post-/api/tasks/backgroundUpdate&#39;&gt;Update a bank connection&lt;/a&gt;\&quot;).
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

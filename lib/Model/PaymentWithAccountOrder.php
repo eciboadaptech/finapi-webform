@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * PaymentWithAccountOrder Class Doc Comment
  *
  * @category Class
  * @description Payment order
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class PaymentWithAccountOrder implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'recipient' => '\OpenAPI\Client\Model\PaymentWithAccountRecipient',
+        'recipient' => '\OpenAPIWebForm\Client\Model\PaymentWithAccountRecipient',
         'structured_remittance_information' => 'string[]',
-        'amount' => '\OpenAPI\Client\Model\Amount',
+        'amount' => '\OpenAPIWebForm\Client\Model\Amount',
         'purpose' => 'string',
         'sepa_purpose_code' => 'string',
         'end_to_end_id' => 'string'
@@ -354,7 +354,7 @@ class PaymentWithAccountOrder implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets recipient
      *
-     * @return \OpenAPI\Client\Model\PaymentWithAccountRecipient
+     * @return \OpenAPIWebForm\Client\Model\PaymentWithAccountRecipient
      */
     public function getRecipient()
     {
@@ -364,7 +364,7 @@ class PaymentWithAccountOrder implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets recipient
      *
-     * @param \OpenAPI\Client\Model\PaymentWithAccountRecipient $recipient recipient
+     * @param \OpenAPIWebForm\Client\Model\PaymentWithAccountRecipient $recipient recipient
      *
      * @return self
      */
@@ -417,7 +417,7 @@ class PaymentWithAccountOrder implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets amount
      *
-     * @return \OpenAPI\Client\Model\Amount
+     * @return \OpenAPIWebForm\Client\Model\Amount
      */
     public function getAmount()
     {
@@ -427,7 +427,7 @@ class PaymentWithAccountOrder implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets amount
      *
-     * @param \OpenAPI\Client\Model\Amount $amount amount
+     * @param \OpenAPIWebForm\Client\Model\Amount $amount amount
      *
      * @return self
      */

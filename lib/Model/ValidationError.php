@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * ValidationError Class Doc Comment
  *
  * @category Class
  * @description Set of validation errors
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class ValidationError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'errors' => '\OpenAPI\Client\Model\InvalidFieldError[]',
+        'errors' => '\OpenAPIWebForm\Client\Model\InvalidFieldError[]',
         'timestamp' => '\DateTime',
         'endpoint' => 'string'
     ];
@@ -324,7 +324,7 @@ class ValidationError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets errors
      *
-     * @return \OpenAPI\Client\Model\InvalidFieldError[]
+     * @return \OpenAPIWebForm\Client\Model\InvalidFieldError[]
      */
     public function getErrors()
     {
@@ -334,7 +334,7 @@ class ValidationError implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets errors
      *
-     * @param \OpenAPI\Client\Model\InvalidFieldError[] $errors Fields that caused the error
+     * @param \OpenAPIWebForm\Client\Model\InvalidFieldError[] $errors Fields that caused the error
      *
      * @return self
      */

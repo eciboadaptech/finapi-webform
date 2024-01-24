@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Translation Class Doc Comment
  *
  * @category Class
  * @description Set of titles and subtitles for a particular language, given in the &lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;https://www.iso.org/iso-639-language-codes.html&#39;&gt;ISO-639&lt;/a&gt; 2 letter format code, grouped by view
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,20 +58,20 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bank_search_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'bank_selection_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'bank_login_view' => '\OpenAPI\Client\Model\TranslationBlock',
-        'redirect_bank_login_view' => '\OpenAPI\Client\Model\TranslationBlock',
-        'sca_method_selection_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'sca_challenge_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'account_selection_view_ais' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'account_selection_view_pis' => '\OpenAPI\Client\Model\TranslationBlock',
-        'data_download_view_ais' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'partial_confirmation_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'partial_confirmation_with_error_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'update_summary_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'confirmation_view' => '\OpenAPI\Client\Model\ShortTranslationBlock',
-        'error_view' => '\OpenAPI\Client\Model\ShortTranslationBlock'
+        'bank_search_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'bank_selection_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'bank_login_view' => '\OpenAPIWebForm\Client\Model\TranslationBlock',
+        'redirect_bank_login_view' => '\OpenAPIWebForm\Client\Model\TranslationBlock',
+        'sca_method_selection_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'sca_challenge_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'account_selection_view_ais' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'account_selection_view_pis' => '\OpenAPIWebForm\Client\Model\TranslationBlock',
+        'data_download_view_ais' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'partial_confirmation_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'partial_confirmation_with_error_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'update_summary_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'confirmation_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock',
+        'error_view' => '\OpenAPIWebForm\Client\Model\ShortTranslationBlock'
     ];
 
     /**
@@ -384,7 +384,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bank_search_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getBankSearchView()
     {
@@ -394,7 +394,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bank_search_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $bank_search_view bank_search_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $bank_search_view bank_search_view
      *
      * @return self
      */
@@ -418,7 +418,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bank_selection_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getBankSelectionView()
     {
@@ -428,7 +428,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bank_selection_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $bank_selection_view bank_selection_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $bank_selection_view bank_selection_view
      *
      * @return self
      */
@@ -452,7 +452,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bank_login_view
      *
-     * @return \OpenAPI\Client\Model\TranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\TranslationBlock|null
      */
     public function getBankLoginView()
     {
@@ -462,7 +462,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bank_login_view
      *
-     * @param \OpenAPI\Client\Model\TranslationBlock|null $bank_login_view bank_login_view
+     * @param \OpenAPIWebForm\Client\Model\TranslationBlock|null $bank_login_view bank_login_view
      *
      * @return self
      */
@@ -486,7 +486,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets redirect_bank_login_view
      *
-     * @return \OpenAPI\Client\Model\TranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\TranslationBlock|null
      */
     public function getRedirectBankLoginView()
     {
@@ -496,7 +496,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets redirect_bank_login_view
      *
-     * @param \OpenAPI\Client\Model\TranslationBlock|null $redirect_bank_login_view redirect_bank_login_view
+     * @param \OpenAPIWebForm\Client\Model\TranslationBlock|null $redirect_bank_login_view redirect_bank_login_view
      *
      * @return self
      */
@@ -520,7 +520,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sca_method_selection_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getScaMethodSelectionView()
     {
@@ -530,7 +530,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sca_method_selection_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $sca_method_selection_view sca_method_selection_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $sca_method_selection_view sca_method_selection_view
      *
      * @return self
      */
@@ -554,7 +554,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sca_challenge_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getScaChallengeView()
     {
@@ -564,7 +564,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sca_challenge_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $sca_challenge_view sca_challenge_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $sca_challenge_view sca_challenge_view
      *
      * @return self
      */
@@ -588,7 +588,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets account_selection_view_ais
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getAccountSelectionViewAis()
     {
@@ -598,7 +598,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets account_selection_view_ais
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $account_selection_view_ais account_selection_view_ais
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $account_selection_view_ais account_selection_view_ais
      *
      * @return self
      */
@@ -622,7 +622,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets account_selection_view_pis
      *
-     * @return \OpenAPI\Client\Model\TranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\TranslationBlock|null
      */
     public function getAccountSelectionViewPis()
     {
@@ -632,7 +632,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets account_selection_view_pis
      *
-     * @param \OpenAPI\Client\Model\TranslationBlock|null $account_selection_view_pis account_selection_view_pis
+     * @param \OpenAPIWebForm\Client\Model\TranslationBlock|null $account_selection_view_pis account_selection_view_pis
      *
      * @return self
      */
@@ -656,7 +656,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets data_download_view_ais
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getDataDownloadViewAis()
     {
@@ -666,7 +666,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets data_download_view_ais
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $data_download_view_ais data_download_view_ais
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $data_download_view_ais data_download_view_ais
      *
      * @return self
      */
@@ -690,7 +690,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets partial_confirmation_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getPartialConfirmationView()
     {
@@ -700,7 +700,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets partial_confirmation_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $partial_confirmation_view partial_confirmation_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $partial_confirmation_view partial_confirmation_view
      *
      * @return self
      */
@@ -724,7 +724,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets partial_confirmation_with_error_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getPartialConfirmationWithErrorView()
     {
@@ -734,7 +734,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets partial_confirmation_with_error_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $partial_confirmation_with_error_view partial_confirmation_with_error_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $partial_confirmation_with_error_view partial_confirmation_with_error_view
      *
      * @return self
      */
@@ -758,7 +758,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets update_summary_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getUpdateSummaryView()
     {
@@ -768,7 +768,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets update_summary_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $update_summary_view update_summary_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $update_summary_view update_summary_view
      *
      * @return self
      */
@@ -792,7 +792,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets confirmation_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getConfirmationView()
     {
@@ -802,7 +802,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets confirmation_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $confirmation_view confirmation_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $confirmation_view confirmation_view
      *
      * @return self
      */
@@ -826,7 +826,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets error_view
      *
-     * @return \OpenAPI\Client\Model\ShortTranslationBlock|null
+     * @return \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null
      */
     public function getErrorView()
     {
@@ -836,7 +836,7 @@ class Translation implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets error_view
      *
-     * @param \OpenAPI\Client\Model\ShortTranslationBlock|null $error_view error_view
+     * @param \OpenAPIWebForm\Client\Model\ShortTranslationBlock|null $error_view error_view
      *
      * @return self
      */

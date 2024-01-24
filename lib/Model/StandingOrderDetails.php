@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * StandingOrderDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,18 +57,18 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'amount' => '\OpenAPI\Client\Model\Amount',
+        'amount' => '\OpenAPIWebForm\Client\Model\Amount',
         'purpose' => 'string',
         'sepa_purpose_code' => 'string',
         'end_to_end_id' => 'string',
-        'recipient' => '\OpenAPI\Client\Model\Recipient',
-        'sender' => '\OpenAPI\Client\Model\Sender',
+        'recipient' => '\OpenAPIWebForm\Client\Model\Recipient',
+        'sender' => '\OpenAPIWebForm\Client\Model\Sender',
         'start_date' => '\DateTime',
         'end_date' => '\DateTime',
         'frequency' => 'string',
         'profile_id' => 'string',
         'redirect_url' => 'string',
-        'callbacks' => '\OpenAPI\Client\Model\Callbacks',
+        'callbacks' => '\OpenAPIWebForm\Client\Model\Callbacks',
         'allow_test_bank' => 'bool'
     ];
 
@@ -458,7 +458,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets amount
      *
-     * @return \OpenAPI\Client\Model\Amount
+     * @return \OpenAPIWebForm\Client\Model\Amount
      */
     public function getAmount()
     {
@@ -468,7 +468,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets amount
      *
-     * @param \OpenAPI\Client\Model\Amount $amount amount
+     * @param \OpenAPIWebForm\Client\Model\Amount $amount amount
      *
      * @return self
      */
@@ -606,7 +606,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets recipient
      *
-     * @return \OpenAPI\Client\Model\Recipient
+     * @return \OpenAPIWebForm\Client\Model\Recipient
      */
     public function getRecipient()
     {
@@ -616,7 +616,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets recipient
      *
-     * @param \OpenAPI\Client\Model\Recipient $recipient recipient
+     * @param \OpenAPIWebForm\Client\Model\Recipient $recipient recipient
      *
      * @return self
      */
@@ -633,7 +633,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets sender
      *
-     * @return \OpenAPI\Client\Model\Sender|null
+     * @return \OpenAPIWebForm\Client\Model\Sender|null
      */
     public function getSender()
     {
@@ -643,7 +643,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets sender
      *
-     * @param \OpenAPI\Client\Model\Sender|null $sender sender
+     * @param \OpenAPIWebForm\Client\Model\Sender|null $sender sender
      *
      * @return self
      */
@@ -850,7 +850,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets callbacks
      *
-     * @return \OpenAPI\Client\Model\Callbacks|null
+     * @return \OpenAPIWebForm\Client\Model\Callbacks|null
      */
     public function getCallbacks()
     {
@@ -860,7 +860,7 @@ class StandingOrderDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets callbacks
      *
-     * @param \OpenAPI\Client\Model\Callbacks|null $callbacks callbacks
+     * @param \OpenAPIWebForm\Client\Model\Callbacks|null $callbacks callbacks
      *
      * @return self
      */

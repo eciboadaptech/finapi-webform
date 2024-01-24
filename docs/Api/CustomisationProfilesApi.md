@@ -1,4 +1,4 @@
-# OpenAPI\Client\CustomisationProfilesApi
+# OpenAPIWebForm\Client\CustomisationProfilesApi
 
 All URIs are relative to https://webform-sandbox.finapi.io, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://webform-sandbox.finapi.io, except if the operat
 ## `createProfile()`
 
 ```php
-createProfile($create_profile_details): \OpenAPI\Client\Model\Profile
+createProfile($create_profile_details): \OpenAPIWebForm\Client\Model\Profile
 ```
 
 Create a profile
@@ -29,16 +29,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationProfilesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_profile_details = new \OpenAPI\Client\Model\CreateProfileDetails(); // \OpenAPI\Client\Model\CreateProfileDetails
+$create_profile_details = new \OpenAPIWebForm\Client\Model\CreateProfileDetails(); // \OpenAPIWebForm\Client\Model\CreateProfileDetails
 
 try {
     $result = $apiInstance->createProfile($create_profile_details);
@@ -52,11 +52,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_profile_details** | [**\OpenAPI\Client\Model\CreateProfileDetails**](../Model/CreateProfileDetails.md)|  | |
+| **create_profile_details** | [**\OpenAPIWebForm\Client\Model\CreateProfileDetails**](../Model/CreateProfileDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Profile**](../Model/Profile.md)
+[**\OpenAPIWebForm\Client\Model\Profile**](../Model/Profile.md)
 
 ### Authorization
 
@@ -89,10 +89,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationProfilesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -133,7 +133,7 @@ void (empty response body)
 ## `editProfile()`
 
 ```php
-editProfile($id, $edit_profile_details): \OpenAPI\Client\Model\Profile
+editProfile($id, $edit_profile_details): \OpenAPIWebForm\Client\Model\Profile
 ```
 
 Edit a profile
@@ -148,17 +148,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationProfilesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 'id_example'; // string | Identifier of the profile
-$edit_profile_details = new \OpenAPI\Client\Model\EditProfileDetails(); // \OpenAPI\Client\Model\EditProfileDetails
+$edit_profile_details = new \OpenAPIWebForm\Client\Model\EditProfileDetails(); // \OpenAPIWebForm\Client\Model\EditProfileDetails
 
 try {
     $result = $apiInstance->editProfile($id, $edit_profile_details);
@@ -173,11 +173,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **id** | **string**| Identifier of the profile | |
-| **edit_profile_details** | [**\OpenAPI\Client\Model\EditProfileDetails**](../Model/EditProfileDetails.md)|  | |
+| **edit_profile_details** | [**\OpenAPIWebForm\Client\Model\EditProfileDetails**](../Model/EditProfileDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Profile**](../Model/Profile.md)
+[**\OpenAPIWebForm\Client\Model\Profile**](../Model/Profile.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ try {
 ## `getProfile()`
 
 ```php
-getProfile($id): \OpenAPI\Client\Model\Profile
+getProfile($id): \OpenAPIWebForm\Client\Model\Profile
 ```
 
 Get a profile
@@ -210,10 +210,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationProfilesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -237,7 +237,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Profile**](../Model/Profile.md)
+[**\OpenAPIWebForm\Client\Model\Profile**](../Model/Profile.md)
 
 ### Authorization
 
@@ -255,7 +255,7 @@ try {
 ## `getProfiles()`
 
 ```php
-getProfiles($order, $page, $per_page): \OpenAPI\Client\Model\ProfilesPage
+getProfiles($order, $page, $per_page): \OpenAPIWebForm\Client\Model\ProfilesPage
 ```
 
 Get profiles
@@ -270,10 +270,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationProfilesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationProfilesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -301,7 +301,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProfilesPage**](../Model/ProfilesPage.md)
+[**\OpenAPIWebForm\Client\Model\ProfilesPage**](../Model/ProfilesPage.md)
 
 ### Authorization
 

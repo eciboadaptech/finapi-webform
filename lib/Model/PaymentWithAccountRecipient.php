@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * PaymentWithAccountRecipient Class Doc Comment
  *
  * @category Class
  * @description Payment Recipient
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class PaymentWithAccountRecipient implements ModelInterface, ArrayAccess, \JsonS
         'iban' => 'string',
         'bic' => 'string',
         'bank_name' => 'string',
-        'address' => '\OpenAPI\Client\Model\AddressData'
+        'address' => '\OpenAPIWebForm\Client\Model\AddressData'
     ];
 
     /**
@@ -507,7 +507,7 @@ class PaymentWithAccountRecipient implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets address
      *
-     * @return \OpenAPI\Client\Model\AddressData|null
+     * @return \OpenAPIWebForm\Client\Model\AddressData|null
      */
     public function getAddress()
     {
@@ -517,7 +517,7 @@ class PaymentWithAccountRecipient implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets address
      *
-     * @param \OpenAPI\Client\Model\AddressData|null $address address
+     * @param \OpenAPIWebForm\Client\Model\AddressData|null $address address
      *
      * @return self
      */

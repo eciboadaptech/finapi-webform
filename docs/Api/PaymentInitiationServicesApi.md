@@ -1,4 +1,4 @@
-# OpenAPI\Client\PaymentInitiationServicesApi
+# OpenAPIWebForm\Client\PaymentInitiationServicesApi
 
 All URIs are relative to https://webform-sandbox.finapi.io, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://webform-sandbox.finapi.io, except if the operat
 ## `createForDirectDebitWithAccountId()`
 
 ```php
-createForDirectDebitWithAccountId($direct_debit_with_account_details): \OpenAPI\Client\Model\WebForm
+createForDirectDebitWithAccountId($direct_debit_with_account_details): \OpenAPIWebForm\Client\Model\WebForm
 ```
 
 Create a direct debit with account ID
@@ -28,16 +28,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentInitiationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\PaymentInitiationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$direct_debit_with_account_details = new \OpenAPI\Client\Model\DirectDebitWithAccountDetails(); // \OpenAPI\Client\Model\DirectDebitWithAccountDetails
+$direct_debit_with_account_details = new \OpenAPIWebForm\Client\Model\DirectDebitWithAccountDetails(); // \OpenAPIWebForm\Client\Model\DirectDebitWithAccountDetails
 
 try {
     $result = $apiInstance->createForDirectDebitWithAccountId($direct_debit_with_account_details);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **direct_debit_with_account_details** | [**\OpenAPI\Client\Model\DirectDebitWithAccountDetails**](../Model/DirectDebitWithAccountDetails.md)|  | |
+| **direct_debit_with_account_details** | [**\OpenAPIWebForm\Client\Model\DirectDebitWithAccountDetails**](../Model/DirectDebitWithAccountDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebForm**](../Model/WebForm.md)
+[**\OpenAPIWebForm\Client\Model\WebForm**](../Model/WebForm.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ try {
 ## `createForPaymentWithAccountId()`
 
 ```php
-createForPaymentWithAccountId($payment_with_account_details): \OpenAPI\Client\Model\WebForm
+createForPaymentWithAccountId($payment_with_account_details): \OpenAPIWebForm\Client\Model\WebForm
 ```
 
 Create a payment with account ID
@@ -88,16 +88,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentInitiationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\PaymentInitiationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$payment_with_account_details = new \OpenAPI\Client\Model\PaymentWithAccountDetails(); // \OpenAPI\Client\Model\PaymentWithAccountDetails
+$payment_with_account_details = new \OpenAPIWebForm\Client\Model\PaymentWithAccountDetails(); // \OpenAPIWebForm\Client\Model\PaymentWithAccountDetails
 
 try {
     $result = $apiInstance->createForPaymentWithAccountId($payment_with_account_details);
@@ -111,11 +111,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **payment_with_account_details** | [**\OpenAPI\Client\Model\PaymentWithAccountDetails**](../Model/PaymentWithAccountDetails.md)|  | |
+| **payment_with_account_details** | [**\OpenAPIWebForm\Client\Model\PaymentWithAccountDetails**](../Model/PaymentWithAccountDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebForm**](../Model/WebForm.md)
+[**\OpenAPIWebForm\Client\Model\WebForm**](../Model/WebForm.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ try {
 ## `createForStandalonePayment()`
 
 ```php
-createForStandalonePayment($standalone_payment_details): \OpenAPI\Client\Model\WebForm
+createForStandalonePayment($standalone_payment_details): \OpenAPIWebForm\Client\Model\WebForm
 ```
 
 Create a standalone payment
@@ -148,16 +148,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentInitiationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\PaymentInitiationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$standalone_payment_details = new \OpenAPI\Client\Model\StandalonePaymentDetails(); // \OpenAPI\Client\Model\StandalonePaymentDetails
+$standalone_payment_details = new \OpenAPIWebForm\Client\Model\StandalonePaymentDetails(); // \OpenAPIWebForm\Client\Model\StandalonePaymentDetails
 
 try {
     $result = $apiInstance->createForStandalonePayment($standalone_payment_details);
@@ -171,11 +171,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **standalone_payment_details** | [**\OpenAPI\Client\Model\StandalonePaymentDetails**](../Model/StandalonePaymentDetails.md)|  | |
+| **standalone_payment_details** | [**\OpenAPIWebForm\Client\Model\StandalonePaymentDetails**](../Model/StandalonePaymentDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebForm**](../Model/WebForm.md)
+[**\OpenAPIWebForm\Client\Model\WebForm**](../Model/WebForm.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ try {
 ## `createForStandingOrder()`
 
 ```php
-createForStandingOrder($standing_order_details): \OpenAPI\Client\Model\WebForm
+createForStandingOrder($standing_order_details): \OpenAPIWebForm\Client\Model\WebForm
 ```
 
 Create a standing order
@@ -208,16 +208,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\PaymentInitiationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\PaymentInitiationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$standing_order_details = new \OpenAPI\Client\Model\StandingOrderDetails(); // \OpenAPI\Client\Model\StandingOrderDetails
+$standing_order_details = new \OpenAPIWebForm\Client\Model\StandingOrderDetails(); // \OpenAPIWebForm\Client\Model\StandingOrderDetails
 
 try {
     $result = $apiInstance->createForStandingOrder($standing_order_details);
@@ -231,11 +231,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **standing_order_details** | [**\OpenAPI\Client\Model\StandingOrderDetails**](../Model/StandingOrderDetails.md)|  | |
+| **standing_order_details** | [**\OpenAPIWebForm\Client\Model\StandingOrderDetails**](../Model/StandingOrderDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebForm**](../Model/WebForm.md)
+[**\OpenAPIWebForm\Client\Model\WebForm**](../Model/WebForm.md)
 
 ### Authorization
 

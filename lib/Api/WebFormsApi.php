@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace OpenAPIWebForm\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use OpenAPIWebForm\Client\ApiException;
+use OpenAPIWebForm\Client\Configuration;
+use OpenAPIWebForm\Client\HeaderSelector;
+use OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * WebFormsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,7 +136,7 @@ class WebFormsApi
      * @param  string $id Identifier of the web form (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteWebForm'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -153,7 +153,7 @@ class WebFormsApi
      * @param  string $id Identifier of the web form (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteWebForm'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -203,7 +203,7 @@ class WebFormsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class WebFormsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -219,7 +219,7 @@ class WebFormsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -393,9 +393,9 @@ class WebFormsApi
      * @param  string $id Identifier of the web form (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebForm'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\WebForm|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\WebForm|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error
      */
     public function getWebForm($id, string $contentType = self::contentTypes['getWebForm'][0])
     {
@@ -411,9 +411,9 @@ class WebFormsApi
      * @param  string $id Identifier of the web form (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebForm'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\WebForm|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\WebForm|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWebFormWithHttpInfo($id, string $contentType = self::contentTypes['getWebForm'][0])
     {
@@ -456,68 +456,68 @@ class WebFormsApi
 
             switch($statusCode) {
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 200:
-                    if ('\OpenAPI\Client\Model\WebForm' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\WebForm' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebForm' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\WebForm' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebForm', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\WebForm', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebForm';
+            $returnType = '\OpenAPIWebForm\Client\Model\WebForm';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -538,7 +538,7 @@ class WebFormsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -546,7 +546,7 @@ class WebFormsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebForm',
+                        '\OpenAPIWebForm\Client\Model\WebForm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -554,7 +554,7 @@ class WebFormsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -562,7 +562,7 @@ class WebFormsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -606,7 +606,7 @@ class WebFormsApi
      */
     public function getWebFormAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getWebForm'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebForm';
+        $returnType = '\OpenAPIWebForm\Client\Model\WebForm';
         $request = $this->getWebFormRequest($id, $contentType);
 
         return $this->client
@@ -751,9 +751,9 @@ class WebFormsApi
      * @param  int $per_page The number of items on the page (optional, default to 20)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebForms'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\WebFormsPage|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError
+     * @return \OpenAPIWebForm\Client\Model\WebFormsPage|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError
      */
     public function getWebForms($order = null, $page = 1, $per_page = 20, string $contentType = self::contentTypes['getWebForms'][0])
     {
@@ -771,9 +771,9 @@ class WebFormsApi
      * @param  int $per_page The number of items on the page (optional, default to 20)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getWebForms'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\WebFormsPage|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\WebFormsPage|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWebFormsWithHttpInfo($order = null, $page = 1, $per_page = 20, string $contentType = self::contentTypes['getWebForms'][0])
     {
@@ -816,68 +816,68 @@ class WebFormsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\WebFormsPage' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\WebFormsPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebFormsPage' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\WebFormsPage' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebFormsPage', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\WebFormsPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebFormsPage';
+            $returnType = '\OpenAPIWebForm\Client\Model\WebFormsPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -898,7 +898,7 @@ class WebFormsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebFormsPage',
+                        '\OpenAPIWebForm\Client\Model\WebFormsPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -906,7 +906,7 @@ class WebFormsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -914,7 +914,7 @@ class WebFormsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -922,7 +922,7 @@ class WebFormsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -970,7 +970,7 @@ class WebFormsApi
      */
     public function getWebFormsAsyncWithHttpInfo($order = null, $page = 1, $per_page = 20, string $contentType = self::contentTypes['getWebForms'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebFormsPage';
+        $returnType = '\OpenAPIWebForm\Client\Model\WebFormsPage';
         $request = $this->getWebFormsRequest($order, $page, $per_page, $contentType);
 
         return $this->client

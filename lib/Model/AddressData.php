@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * AddressData Class Doc Comment
  *
  * @category Class
  * @description The address data of the counterparty.&lt;br/&gt;&lt;br/&gt;These address fields are only relevant in very few cases if the debtor bank requires the counterparty&#39;s address.&lt;br/&gt;Please refer to the &lt;a href&#x3D;&#39;https://documentation.finapi.io/payments/czech-republic-sepa-transfers&#39; target&#x3D;&#39;_blank&#39;&gt;Czech Republic SEPA Transfers documentation&lt;/a&gt; for more details.
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class AddressData implements ModelInterface, ArrayAccess, \JsonSerializable
         'house_number' => 'string',
         'post_code' => 'string',
         'city' => 'string',
-        'country' => '\OpenAPI\Client\Model\CountryCode'
+        'country' => '\OpenAPIWebForm\Client\Model\CountryCode'
     ];
 
     /**
@@ -489,7 +489,7 @@ class AddressData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets country
      *
-     * @return \OpenAPI\Client\Model\CountryCode|null
+     * @return \OpenAPIWebForm\Client\Model\CountryCode|null
      */
     public function getCountry()
     {
@@ -499,7 +499,7 @@ class AddressData implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets country
      *
-     * @param \OpenAPI\Client\Model\CountryCode|null $country country
+     * @param \OpenAPIWebForm\Client\Model\CountryCode|null $country country
      *
      * @return self
      */

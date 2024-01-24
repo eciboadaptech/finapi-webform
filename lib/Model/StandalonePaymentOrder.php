@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * StandalonePaymentOrder Class Doc Comment
  *
  * @category Class
  * @description Payment order
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class StandalonePaymentOrder implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'recipient' => '\OpenAPI\Client\Model\StandalonePaymentRecipient',
+        'recipient' => '\OpenAPIWebForm\Client\Model\StandalonePaymentRecipient',
         'structured_remittance_information' => 'string[]',
-        'amount' => '\OpenAPI\Client\Model\Amount',
+        'amount' => '\OpenAPIWebForm\Client\Model\Amount',
         'purpose' => 'string',
         'sepa_purpose_code' => 'string',
         'end_to_end_id' => 'string'
@@ -354,7 +354,7 @@ class StandalonePaymentOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets recipient
      *
-     * @return \OpenAPI\Client\Model\StandalonePaymentRecipient
+     * @return \OpenAPIWebForm\Client\Model\StandalonePaymentRecipient
      */
     public function getRecipient()
     {
@@ -364,7 +364,7 @@ class StandalonePaymentOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets recipient
      *
-     * @param \OpenAPI\Client\Model\StandalonePaymentRecipient $recipient recipient
+     * @param \OpenAPIWebForm\Client\Model\StandalonePaymentRecipient $recipient recipient
      *
      * @return self
      */
@@ -417,7 +417,7 @@ class StandalonePaymentOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets amount
      *
-     * @return \OpenAPI\Client\Model\Amount
+     * @return \OpenAPIWebForm\Client\Model\Amount
      */
     public function getAmount()
     {
@@ -427,7 +427,7 @@ class StandalonePaymentOrder implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets amount
      *
-     * @param \OpenAPI\Client\Model\Amount $amount amount
+     * @param \OpenAPIWebForm\Client\Model\Amount $amount amount
      *
      * @return self
      */

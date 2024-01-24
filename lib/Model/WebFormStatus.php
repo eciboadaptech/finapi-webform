@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace OpenAPIWebForm\Client\Model;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * WebFormStatus Class Doc Comment
  *
  * @category Class
  * @description &lt;strong&gt;Web form status:&lt;/strong&gt;&lt;br/&gt;&amp;bull; &lt;code&gt;NOT_YET_OPENED&lt;/code&gt; - the web form was not yet opened by the end user;&lt;br/&gt;&amp;bull; &lt;code&gt;IN_PROGRESS&lt;/code&gt; - the web form has already been opened by the end user and is currently in progress;&lt;br/&gt;&amp;bull; &lt;code&gt;COMPLETED&lt;/code&gt; - the web form has been successfully completed (final status);&lt;br/&gt;&amp;bull; &lt;code&gt;COMPLETED_WITH_ERROR&lt;/code&gt; - the web form has been completed with an error (final status);&lt;br/&gt;&amp;bull; &lt;code&gt;EXPIRED&lt;/code&gt; - the web form has expired (final status); This status means that either the &lt;code&gt;expiresAt&lt;/code&gt; has passed, or the user closed the web form and we finalized the flow in the background;&lt;br/&gt;&amp;bull; &lt;code&gt;ABORTED&lt;/code&gt; - the web form has been cancelled by the end user (final status).
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

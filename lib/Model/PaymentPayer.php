@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * PaymentPayer Class Doc Comment
  *
  * @category Class
  * @description Payer details
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class PaymentPayer implements ModelInterface, ArrayAccess, \JsonSerializable
         'iban' => 'string',
         'bic' => 'string',
         'address' => 'string',
-        'country' => '\OpenAPI\Client\Model\CountryCode'
+        'country' => '\OpenAPIWebForm\Client\Model\CountryCode'
     ];
 
     /**
@@ -503,7 +503,7 @@ class PaymentPayer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets country
      *
-     * @return \OpenAPI\Client\Model\CountryCode|null
+     * @return \OpenAPIWebForm\Client\Model\CountryCode|null
      */
     public function getCountry()
     {
@@ -513,7 +513,7 @@ class PaymentPayer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets country
      *
-     * @param \OpenAPI\Client\Model\CountryCode|null $country country
+     * @param \OpenAPIWebForm\Client\Model\CountryCode|null $country country
      *
      * @return self
      */

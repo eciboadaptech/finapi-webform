@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * BankConnectionUpdateTaskDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,16 +60,16 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
         'bank_connection_id' => 'int',
         'import_new_accounts' => 'bool',
         'import_new_accounts_mode' => 'string',
-        'account_types' => '\OpenAPI\Client\Model\AccountType[]',
+        'account_types' => '\OpenAPIWebForm\Client\Model\AccountType[]',
         'allowed_interfaces' => 'string[]',
         'skip_balances_download' => 'bool',
         'skip_positions_download' => 'bool',
         'load_owner_data' => 'bool',
-        'manage_saved_settings' => '\OpenAPI\Client\Model\ManageSavedSettings[]',
-        'callbacks' => '\OpenAPI\Client\Model\TaskCallbacks',
+        'manage_saved_settings' => '\OpenAPIWebForm\Client\Model\ManageSavedSettings[]',
+        'callbacks' => '\OpenAPIWebForm\Client\Model\TaskCallbacks',
         'profile_id' => 'string',
         'redirect_url' => 'string',
-        'user_metadata' => '\OpenAPI\Client\Model\UserMetadata'
+        'user_metadata' => '\OpenAPIWebForm\Client\Model\UserMetadata'
     ];
 
     /**
@@ -552,7 +552,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Gets account_types
      *
-     * @return \OpenAPI\Client\Model\AccountType[]|null
+     * @return \OpenAPIWebForm\Client\Model\AccountType[]|null
      */
     public function getAccountTypes()
     {
@@ -562,7 +562,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Sets account_types
      *
-     * @param \OpenAPI\Client\Model\AccountType[]|null $account_types It defines the account types to be added on the bank connection. If no value is given, then all new available accounts will be imported.<br/>Ignored if <code>importNewAccountsMode=SKIP</code> or <code>importNewAccounts</code> is set to false and active otherwise.<br/>This parameter refers to the same parameters of \"<a target='_blank' href='https://docs.finapi.io/?product=access#post-/api/v1/bankConnections/update'>Update a bank connection</a>\" and \"<a target='_blank' href='https://docs.finapi.io/?product=access#post-/api/v1/bankConnections/connectInterface'>Connect a new interface</a>\" services in the finAPI Access API.
+     * @param \OpenAPIWebForm\Client\Model\AccountType[]|null $account_types It defines the account types to be added on the bank connection. If no value is given, then all new available accounts will be imported.<br/>Ignored if <code>importNewAccountsMode=SKIP</code> or <code>importNewAccounts</code> is set to false and active otherwise.<br/>This parameter refers to the same parameters of \"<a target='_blank' href='https://docs.finapi.io/?product=access#post-/api/v1/bankConnections/update'>Update a bank connection</a>\" and \"<a target='_blank' href='https://docs.finapi.io/?product=access#post-/api/v1/bankConnections/connectInterface'>Connect a new interface</a>\" services in the finAPI Access API.
      *
      * @return self
      */
@@ -735,7 +735,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Gets manage_saved_settings
      *
-     * @return \OpenAPI\Client\Model\ManageSavedSettings[]|null
+     * @return \OpenAPIWebForm\Client\Model\ManageSavedSettings[]|null
      */
     public function getManageSavedSettings()
     {
@@ -745,7 +745,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Sets manage_saved_settings
      *
-     * @param \OpenAPI\Client\Model\ManageSavedSettings[]|null $manage_saved_settings If users have stored bank credentials or their preferred SCA procedure in finAPI, then each time it is necessary, the web form will automatically apply the saved settings. This field will force the web form to be presented. Depending on the value you provide in the API, the end-user will have the possibility to provide new credentials, decide if he wants to store the new credentials in finAPI or delete the stored SCA procedure. He might also be able to save a different SCA procedure as preference if the workflow requires it. Use this parameter, for example, if a previous update failed because of invalid credentials, or you want to allow the end-user to reset his preferred SCA method.<br/><br/><strong>Manage saved settings:</strong><br/>&bull; <code>CREDENTIALS</code> - the end user can edit his stored credentials;<br/>&bull; <code>DEFAULT_TWO_STEP_PROCEDURE</code> - the end user can edit his stored default two step procedure.
+     * @param \OpenAPIWebForm\Client\Model\ManageSavedSettings[]|null $manage_saved_settings If users have stored bank credentials or their preferred SCA procedure in finAPI, then each time it is necessary, the web form will automatically apply the saved settings. This field will force the web form to be presented. Depending on the value you provide in the API, the end-user will have the possibility to provide new credentials, decide if he wants to store the new credentials in finAPI or delete the stored SCA procedure. He might also be able to save a different SCA procedure as preference if the workflow requires it. Use this parameter, for example, if a previous update failed because of invalid credentials, or you want to allow the end-user to reset his preferred SCA method.<br/><br/><strong>Manage saved settings:</strong><br/>&bull; <code>CREDENTIALS</code> - the end user can edit his stored credentials;<br/>&bull; <code>DEFAULT_TWO_STEP_PROCEDURE</code> - the end user can edit his stored default two step procedure.
      *
      * @return self
      */
@@ -771,7 +771,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Gets callbacks
      *
-     * @return \OpenAPI\Client\Model\TaskCallbacks|null
+     * @return \OpenAPIWebForm\Client\Model\TaskCallbacks|null
      */
     public function getCallbacks()
     {
@@ -781,7 +781,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Sets callbacks
      *
-     * @param \OpenAPI\Client\Model\TaskCallbacks|null $callbacks callbacks
+     * @param \OpenAPIWebForm\Client\Model\TaskCallbacks|null $callbacks callbacks
      *
      * @return self
      */
@@ -890,7 +890,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Gets user_metadata
      *
-     * @return \OpenAPI\Client\Model\UserMetadata|null
+     * @return \OpenAPIWebForm\Client\Model\UserMetadata|null
      */
     public function getUserMetadata()
     {
@@ -900,7 +900,7 @@ class BankConnectionUpdateTaskDetails implements ModelInterface, ArrayAccess, \J
     /**
      * Sets user_metadata
      *
-     * @param \OpenAPI\Client\Model\UserMetadata|null $user_metadata user_metadata
+     * @param \OpenAPIWebForm\Client\Model\UserMetadata|null $user_metadata user_metadata
      *
      * @return self
      */

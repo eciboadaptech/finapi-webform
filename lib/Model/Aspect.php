@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Aspect Class Doc Comment
  *
  * @category Class
  * @description Customization of web form aspect properties
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'color_scheme' => '\OpenAPI\Client\Model\Color',
-        'text' => '\OpenAPI\Client\Model\Text',
+        'color_scheme' => '\OpenAPIWebForm\Client\Model\Color',
+        'text' => '\OpenAPIWebForm\Client\Model\Text',
         'theme' => 'string'
     ];
 
@@ -315,7 +315,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets color_scheme
      *
-     * @return \OpenAPI\Client\Model\Color|null
+     * @return \OpenAPIWebForm\Client\Model\Color|null
      */
     public function getColorScheme()
     {
@@ -325,7 +325,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets color_scheme
      *
-     * @param \OpenAPI\Client\Model\Color|null $color_scheme color_scheme
+     * @param \OpenAPIWebForm\Client\Model\Color|null $color_scheme color_scheme
      *
      * @return self
      */
@@ -349,7 +349,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets text
      *
-     * @return \OpenAPI\Client\Model\Text|null
+     * @return \OpenAPIWebForm\Client\Model\Text|null
      */
     public function getText()
     {
@@ -359,7 +359,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets text
      *
-     * @param \OpenAPI\Client\Model\Text|null $text text
+     * @param \OpenAPIWebForm\Client\Model\Text|null $text text
      *
      * @return self
      */

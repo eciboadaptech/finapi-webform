@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * TaskCallback Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class TaskCallback implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'task_id' => 'string',
-        'status' => '\OpenAPI\Client\Model\TaskStatus',
-        'web_form' => '\OpenAPI\Client\Model\WebFormInfo'
+        'status' => '\OpenAPIWebForm\Client\Model\TaskStatus',
+        'web_form' => '\OpenAPIWebForm\Client\Model\WebFormInfo'
     ];
 
     /**
@@ -354,7 +354,7 @@ class TaskCallback implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\TaskStatus
+     * @return \OpenAPIWebForm\Client\Model\TaskStatus
      */
     public function getStatus()
     {
@@ -364,7 +364,7 @@ class TaskCallback implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\TaskStatus $status status
+     * @param \OpenAPIWebForm\Client\Model\TaskStatus $status status
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class TaskCallback implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets web_form
      *
-     * @return \OpenAPI\Client\Model\WebFormInfo|null
+     * @return \OpenAPIWebForm\Client\Model\WebFormInfo|null
      */
     public function getWebForm()
     {
@@ -391,7 +391,7 @@ class TaskCallback implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets web_form
      *
-     * @param \OpenAPI\Client\Model\WebFormInfo|null $web_form web_form
+     * @param \OpenAPIWebForm\Client\Model\WebFormInfo|null $web_form web_form
      *
      * @return self
      */

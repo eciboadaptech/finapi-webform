@@ -50,16 +50,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AccountInformationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\AccountInformationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$bank_connection_update_task_details = new \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails(); // \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails
+$bank_connection_update_task_details = new \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails(); // \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails
 
 try {
     $result = $apiInstance->createBankConnectionUpdateTask($bank_connection_update_task_details);

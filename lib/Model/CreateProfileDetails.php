@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * CreateProfileDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPITypes = [
         'label' => 'string',
         'default' => 'bool',
-        'brand' => '\OpenAPI\Client\Model\Brand',
-        'functionality' => '\OpenAPI\Client\Model\Functionality',
-        'aspect' => '\OpenAPI\Client\Model\Aspect'
+        'brand' => '\OpenAPIWebForm\Client\Model\Brand',
+        'functionality' => '\OpenAPIWebForm\Client\Model\Functionality',
+        'aspect' => '\OpenAPIWebForm\Client\Model\Aspect'
     ];
 
     /**
@@ -399,7 +399,7 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets brand
      *
-     * @return \OpenAPI\Client\Model\Brand|null
+     * @return \OpenAPIWebForm\Client\Model\Brand|null
      */
     public function getBrand()
     {
@@ -409,7 +409,7 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets brand
      *
-     * @param \OpenAPI\Client\Model\Brand|null $brand brand
+     * @param \OpenAPIWebForm\Client\Model\Brand|null $brand brand
      *
      * @return self
      */
@@ -433,7 +433,7 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets functionality
      *
-     * @return \OpenAPI\Client\Model\Functionality|null
+     * @return \OpenAPIWebForm\Client\Model\Functionality|null
      */
     public function getFunctionality()
     {
@@ -443,7 +443,7 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets functionality
      *
-     * @param \OpenAPI\Client\Model\Functionality|null $functionality functionality
+     * @param \OpenAPIWebForm\Client\Model\Functionality|null $functionality functionality
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets aspect
      *
-     * @return \OpenAPI\Client\Model\Aspect|null
+     * @return \OpenAPIWebForm\Client\Model\Aspect|null
      */
     public function getAspect()
     {
@@ -477,7 +477,7 @@ class CreateProfileDetails implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets aspect
      *
-     * @param \OpenAPI\Client\Model\Aspect|null $aspect aspect
+     * @param \OpenAPIWebForm\Client\Model\Aspect|null $aspect aspect
      *
      * @return self
      */

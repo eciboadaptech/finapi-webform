@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * WebForm Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
         'url' => 'string',
         'created_at' => '\DateTime',
         'expires_at' => '\DateTime',
-        'type' => '\OpenAPI\Client\Model\WebFormType',
-        'status' => '\OpenAPI\Client\Model\WebFormStatus',
-        'payload' => '\OpenAPI\Client\Model\Payload'
+        'type' => '\OpenAPIWebForm\Client\Model\WebFormType',
+        'status' => '\OpenAPIWebForm\Client\Model\WebFormStatus',
+        'payload' => '\OpenAPIWebForm\Client\Model\Payload'
     ];
 
     /**
@@ -493,7 +493,7 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets type
      *
-     * @return \OpenAPI\Client\Model\WebFormType
+     * @return \OpenAPIWebForm\Client\Model\WebFormType
      */
     public function getType()
     {
@@ -503,7 +503,7 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets type
      *
-     * @param \OpenAPI\Client\Model\WebFormType $type type
+     * @param \OpenAPIWebForm\Client\Model\WebFormType $type type
      *
      * @return self
      */
@@ -520,7 +520,7 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets status
      *
-     * @return \OpenAPI\Client\Model\WebFormStatus
+     * @return \OpenAPIWebForm\Client\Model\WebFormStatus
      */
     public function getStatus()
     {
@@ -530,7 +530,7 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets status
      *
-     * @param \OpenAPI\Client\Model\WebFormStatus $status status
+     * @param \OpenAPIWebForm\Client\Model\WebFormStatus $status status
      *
      * @return self
      */
@@ -547,7 +547,7 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payload
      *
-     * @return \OpenAPI\Client\Model\Payload
+     * @return \OpenAPIWebForm\Client\Model\Payload
      */
     public function getPayload()
     {
@@ -557,7 +557,7 @@ class WebForm implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payload
      *
-     * @param \OpenAPI\Client\Model\Payload $payload payload
+     * @param \OpenAPIWebForm\Client\Model\Payload $payload payload
      *
      * @return self
      */

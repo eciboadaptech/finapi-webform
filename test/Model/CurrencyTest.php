@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace OpenAPIWebForm\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description &lt;strong&gt;Currency:&lt;/strong&gt; The &lt;a target&#x3D;&#39;_blank&#39; href&#x3D;&#39;https://www.iso.org/iso-4217-currency-codes.html&#39;&gt;ISO-4217&lt;/a&gt; currency code of the amount.&lt;br/&gt;At the moment, the only possible currency we accept here is:&lt;br/&gt;&amp;bull; for direct debits and standing orders - &lt;code&gt;EUR&lt;/code&gt; only;&lt;br/&gt;&amp;bull; for payments with an account - the currency associated with the account. (Currently we support SEPA (EUR) and CZ domestic payments (CZK). For the rest, it will work on a best-effort basis.)
- * @package     OpenAPI\Client
+ * @package     OpenAPIWebForm\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

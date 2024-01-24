@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace OpenAPIWebForm\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description &lt;strong&gt;Task status:&lt;/strong&gt;&lt;br/&gt;&amp;bull; &lt;code&gt;NOT_YET_STARTED&lt;/code&gt; - the task has been enqueued and will be processed soon;&lt;br/&gt;&amp;bull; &lt;code&gt;IN_PROGRESS&lt;/code&gt; - the task has been started and is currently in progress;&lt;br/&gt;&amp;bull; &lt;code&gt;WEB_FORM_REQUIRED&lt;/code&gt; - the task requires a web form to continue the flow with end user involvement (final status);&lt;br/&gt;&amp;bull; &lt;code&gt;COMPLETED&lt;/code&gt; - the task has been successfully completed (final status);&lt;br/&gt;&amp;bull; &lt;code&gt;COMPLETED_WITH_ERROR&lt;/code&gt; - the task has been completed with an error (final status).
- * @package     OpenAPI\Client
+ * @package     OpenAPIWebForm\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

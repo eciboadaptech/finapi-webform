@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace OpenAPIWebForm\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use OpenAPIWebForm\Client\ApiException;
+use OpenAPIWebForm\Client\Configuration;
+use OpenAPIWebForm\Client\HeaderSelector;
+use OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * CustomisationProfilesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,12 +139,12 @@ class CustomisationProfilesApi
      *
      * Create a profile
      *
-     * @param  \OpenAPI\Client\Model\CreateProfileDetails $create_profile_details create_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateProfileDetails $create_profile_details create_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Profile
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Profile
      */
     public function createProfile($create_profile_details, string $contentType = self::contentTypes['createProfile'][0])
     {
@@ -157,12 +157,12 @@ class CustomisationProfilesApi
      *
      * Create a profile
      *
-     * @param  \OpenAPI\Client\Model\CreateProfileDetails $create_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateProfileDetails $create_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Profile, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Profile, HTTP status code, HTTP response headers (array of strings)
      */
     public function createProfileWithHttpInfo($create_profile_details, string $contentType = self::contentTypes['createProfile'][0])
     {
@@ -205,98 +205,98 @@ class CustomisationProfilesApi
 
             switch($statusCode) {
                 case 500:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 201:
-                    if ('\OpenAPI\Client\Model\Profile' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Profile' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Profile' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Profile' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Profile', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Profile', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Profile';
+            $returnType = '\OpenAPIWebForm\Client\Model\Profile';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -317,7 +317,7 @@ class CustomisationProfilesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -325,7 +325,7 @@ class CustomisationProfilesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -333,7 +333,7 @@ class CustomisationProfilesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -341,7 +341,7 @@ class CustomisationProfilesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -349,7 +349,7 @@ class CustomisationProfilesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -357,7 +357,7 @@ class CustomisationProfilesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Profile',
+                        '\OpenAPIWebForm\Client\Model\Profile',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -372,7 +372,7 @@ class CustomisationProfilesApi
      *
      * Create a profile
      *
-     * @param  \OpenAPI\Client\Model\CreateProfileDetails $create_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateProfileDetails $create_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProfile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -393,7 +393,7 @@ class CustomisationProfilesApi
      *
      * Create a profile
      *
-     * @param  \OpenAPI\Client\Model\CreateProfileDetails $create_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateProfileDetails $create_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProfile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -401,7 +401,7 @@ class CustomisationProfilesApi
      */
     public function createProfileAsyncWithHttpInfo($create_profile_details, string $contentType = self::contentTypes['createProfile'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Profile';
+        $returnType = '\OpenAPIWebForm\Client\Model\Profile';
         $request = $this->createProfileRequest($create_profile_details, $contentType);
 
         return $this->client
@@ -443,7 +443,7 @@ class CustomisationProfilesApi
     /**
      * Create request for operation 'createProfile'
      *
-     * @param  \OpenAPI\Client\Model\CreateProfileDetails $create_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateProfileDetails $create_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createProfile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -543,7 +543,7 @@ class CustomisationProfilesApi
      * @param  string $id Identifier of the profile (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -560,7 +560,7 @@ class CustomisationProfilesApi
      * @param  string $id Identifier of the profile (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -610,7 +610,7 @@ class CustomisationProfilesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -618,7 +618,7 @@ class CustomisationProfilesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -626,7 +626,7 @@ class CustomisationProfilesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -798,12 +798,12 @@ class CustomisationProfilesApi
      * Edit a profile
      *
      * @param  string $id Identifier of the profile (required)
-     * @param  \OpenAPI\Client\Model\EditProfileDetails $edit_profile_details edit_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\EditProfileDetails $edit_profile_details edit_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Profile|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error
+     * @return \OpenAPIWebForm\Client\Model\Profile|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error
      */
     public function editProfile($id, $edit_profile_details, string $contentType = self::contentTypes['editProfile'][0])
     {
@@ -817,12 +817,12 @@ class CustomisationProfilesApi
      * Edit a profile
      *
      * @param  string $id Identifier of the profile (required)
-     * @param  \OpenAPI\Client\Model\EditProfileDetails $edit_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\EditProfileDetails $edit_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Profile|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Profile|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function editProfileWithHttpInfo($id, $edit_profile_details, string $contentType = self::contentTypes['editProfile'][0])
     {
@@ -865,98 +865,98 @@ class CustomisationProfilesApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\Profile' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Profile' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Profile' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Profile' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Profile', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Profile', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Profile';
+            $returnType = '\OpenAPIWebForm\Client\Model\Profile';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -977,7 +977,7 @@ class CustomisationProfilesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Profile',
+                        '\OpenAPIWebForm\Client\Model\Profile',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -985,7 +985,7 @@ class CustomisationProfilesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -993,7 +993,7 @@ class CustomisationProfilesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1001,7 +1001,7 @@ class CustomisationProfilesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1009,7 +1009,7 @@ class CustomisationProfilesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1017,7 +1017,7 @@ class CustomisationProfilesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1033,7 +1033,7 @@ class CustomisationProfilesApi
      * Edit a profile
      *
      * @param  string $id Identifier of the profile (required)
-     * @param  \OpenAPI\Client\Model\EditProfileDetails $edit_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\EditProfileDetails $edit_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProfile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1055,7 +1055,7 @@ class CustomisationProfilesApi
      * Edit a profile
      *
      * @param  string $id Identifier of the profile (required)
-     * @param  \OpenAPI\Client\Model\EditProfileDetails $edit_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\EditProfileDetails $edit_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProfile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1063,7 +1063,7 @@ class CustomisationProfilesApi
      */
     public function editProfileAsyncWithHttpInfo($id, $edit_profile_details, string $contentType = self::contentTypes['editProfile'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Profile';
+        $returnType = '\OpenAPIWebForm\Client\Model\Profile';
         $request = $this->editProfileRequest($id, $edit_profile_details, $contentType);
 
         return $this->client
@@ -1106,7 +1106,7 @@ class CustomisationProfilesApi
      * Create request for operation 'editProfile'
      *
      * @param  string $id Identifier of the profile (required)
-     * @param  \OpenAPI\Client\Model\EditProfileDetails $edit_profile_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\EditProfileDetails $edit_profile_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['editProfile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1221,9 +1221,9 @@ class CustomisationProfilesApi
      * @param  string $id Identifier of the profile (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Profile
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Profile
      */
     public function getProfile($id, string $contentType = self::contentTypes['getProfile'][0])
     {
@@ -1239,9 +1239,9 @@ class CustomisationProfilesApi
      * @param  string $id Identifier of the profile (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProfile'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Profile, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Profile, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProfileWithHttpInfo($id, string $contentType = self::contentTypes['getProfile'][0])
     {
@@ -1284,68 +1284,68 @@ class CustomisationProfilesApi
 
             switch($statusCode) {
                 case 404:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 200:
-                    if ('\OpenAPI\Client\Model\Profile' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Profile' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Profile' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Profile' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Profile', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Profile', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Profile';
+            $returnType = '\OpenAPIWebForm\Client\Model\Profile';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1366,7 +1366,7 @@ class CustomisationProfilesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1374,7 +1374,7 @@ class CustomisationProfilesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1382,7 +1382,7 @@ class CustomisationProfilesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1390,7 +1390,7 @@ class CustomisationProfilesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Profile',
+                        '\OpenAPIWebForm\Client\Model\Profile',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1434,7 +1434,7 @@ class CustomisationProfilesApi
      */
     public function getProfileAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getProfile'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Profile';
+        $returnType = '\OpenAPIWebForm\Client\Model\Profile';
         $request = $this->getProfileRequest($id, $contentType);
 
         return $this->client
@@ -1579,9 +1579,9 @@ class CustomisationProfilesApi
      * @param  int $per_page The number of items on the page (optional, default to 20)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProfiles'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ProfilesPage|\OpenAPI\Client\Model\ValidationError
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ProfilesPage|\OpenAPIWebForm\Client\Model\ValidationError
      */
     public function getProfiles($order = null, $page = 1, $per_page = 20, string $contentType = self::contentTypes['getProfiles'][0])
     {
@@ -1599,9 +1599,9 @@ class CustomisationProfilesApi
      * @param  int $per_page The number of items on the page (optional, default to 20)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getProfiles'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ProfilesPage|\OpenAPI\Client\Model\ValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ProfilesPage|\OpenAPIWebForm\Client\Model\ValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProfilesWithHttpInfo($order = null, $page = 1, $per_page = 20, string $contentType = self::contentTypes['getProfiles'][0])
     {
@@ -1644,68 +1644,68 @@ class CustomisationProfilesApi
 
             switch($statusCode) {
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProfilesPage' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ProfilesPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ProfilesPage' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ProfilesPage' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProfilesPage', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ProfilesPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProfilesPage';
+            $returnType = '\OpenAPIWebForm\Client\Model\ProfilesPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1726,7 +1726,7 @@ class CustomisationProfilesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1734,7 +1734,7 @@ class CustomisationProfilesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1742,7 +1742,7 @@ class CustomisationProfilesApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProfilesPage',
+                        '\OpenAPIWebForm\Client\Model\ProfilesPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1750,7 +1750,7 @@ class CustomisationProfilesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1798,7 +1798,7 @@ class CustomisationProfilesApi
      */
     public function getProfilesAsyncWithHttpInfo($order = null, $page = 1, $per_page = 20, string $contentType = self::contentTypes['getProfiles'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\ProfilesPage';
+        $returnType = '\OpenAPIWebForm\Client\Model\ProfilesPage';
         $request = $this->getProfilesRequest($order, $page, $per_page, $contentType);
 
         return $this->client

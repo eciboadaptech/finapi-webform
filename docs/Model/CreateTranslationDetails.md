@@ -4,16 +4,16 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**cs** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**de** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**en** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**es** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**fr** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**it** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**nl** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**pl** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**ro** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**sk** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
-**tr** | [**\OpenAPI\Client\Model\Translation**](Translation.md) |  | [optional]
+**cs** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**de** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**en** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**es** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**fr** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**it** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**nl** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**pl** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**ro** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**sk** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
+**tr** | [**\OpenAPIWebForm\Client\Model\Translation**](Translation.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

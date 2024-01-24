@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * TranslationSet Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,17 +59,17 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'id' => 'string',
         'created_at' => '\DateTime',
-        'cs' => '\OpenAPI\Client\Model\Translation',
-        'de' => '\OpenAPI\Client\Model\Translation',
-        'en' => '\OpenAPI\Client\Model\Translation',
-        'es' => '\OpenAPI\Client\Model\Translation',
-        'fr' => '\OpenAPI\Client\Model\Translation',
-        'it' => '\OpenAPI\Client\Model\Translation',
-        'nl' => '\OpenAPI\Client\Model\Translation',
-        'pl' => '\OpenAPI\Client\Model\Translation',
-        'ro' => '\OpenAPI\Client\Model\Translation',
-        'sk' => '\OpenAPI\Client\Model\Translation',
-        'tr' => '\OpenAPI\Client\Model\Translation'
+        'cs' => '\OpenAPIWebForm\Client\Model\Translation',
+        'de' => '\OpenAPIWebForm\Client\Model\Translation',
+        'en' => '\OpenAPIWebForm\Client\Model\Translation',
+        'es' => '\OpenAPIWebForm\Client\Model\Translation',
+        'fr' => '\OpenAPIWebForm\Client\Model\Translation',
+        'it' => '\OpenAPIWebForm\Client\Model\Translation',
+        'nl' => '\OpenAPIWebForm\Client\Model\Translation',
+        'pl' => '\OpenAPIWebForm\Client\Model\Translation',
+        'ro' => '\OpenAPIWebForm\Client\Model\Translation',
+        'sk' => '\OpenAPIWebForm\Client\Model\Translation',
+        'tr' => '\OpenAPIWebForm\Client\Model\Translation'
     ];
 
     /**
@@ -451,7 +451,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets cs
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getCs()
     {
@@ -461,7 +461,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets cs
      *
-     * @param \OpenAPI\Client\Model\Translation|null $cs cs
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $cs cs
      *
      * @return self
      */
@@ -485,7 +485,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets de
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getDe()
     {
@@ -495,7 +495,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets de
      *
-     * @param \OpenAPI\Client\Model\Translation|null $de de
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $de de
      *
      * @return self
      */
@@ -519,7 +519,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets en
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getEn()
     {
@@ -529,7 +529,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets en
      *
-     * @param \OpenAPI\Client\Model\Translation|null $en en
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $en en
      *
      * @return self
      */
@@ -553,7 +553,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets es
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getEs()
     {
@@ -563,7 +563,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets es
      *
-     * @param \OpenAPI\Client\Model\Translation|null $es es
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $es es
      *
      * @return self
      */
@@ -587,7 +587,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fr
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getFr()
     {
@@ -597,7 +597,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fr
      *
-     * @param \OpenAPI\Client\Model\Translation|null $fr fr
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $fr fr
      *
      * @return self
      */
@@ -621,7 +621,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets it
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getIt()
     {
@@ -631,7 +631,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets it
      *
-     * @param \OpenAPI\Client\Model\Translation|null $it it
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $it it
      *
      * @return self
      */
@@ -655,7 +655,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets nl
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getNl()
     {
@@ -665,7 +665,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets nl
      *
-     * @param \OpenAPI\Client\Model\Translation|null $nl nl
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $nl nl
      *
      * @return self
      */
@@ -689,7 +689,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pl
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getPl()
     {
@@ -699,7 +699,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pl
      *
-     * @param \OpenAPI\Client\Model\Translation|null $pl pl
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $pl pl
      *
      * @return self
      */
@@ -723,7 +723,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets ro
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getRo()
     {
@@ -733,7 +733,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets ro
      *
-     * @param \OpenAPI\Client\Model\Translation|null $ro ro
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $ro ro
      *
      * @return self
      */
@@ -757,7 +757,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets sk
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getSk()
     {
@@ -767,7 +767,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets sk
      *
-     * @param \OpenAPI\Client\Model\Translation|null $sk sk
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $sk sk
      *
      * @return self
      */
@@ -791,7 +791,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tr
      *
-     * @return \OpenAPI\Client\Model\Translation|null
+     * @return \OpenAPIWebForm\Client\Model\Translation|null
      */
     public function getTr()
     {
@@ -801,7 +801,7 @@ class TranslationSet implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tr
      *
-     * @param \OpenAPI\Client\Model\Translation|null $tr tr
+     * @param \OpenAPIWebForm\Client\Model\Translation|null $tr tr
      *
      * @return self
      */

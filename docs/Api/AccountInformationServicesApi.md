@@ -1,4 +1,4 @@
-# OpenAPI\Client\AccountInformationServicesApi
+# OpenAPIWebForm\Client\AccountInformationServicesApi
 
 All URIs are relative to https://webform-sandbox.finapi.io, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://webform-sandbox.finapi.io, except if the operat
 ## `createBankConnectionUpdateTask()`
 
 ```php
-createBankConnectionUpdateTask($bank_connection_update_task_details): \OpenAPI\Client\Model\Task
+createBankConnectionUpdateTask($bank_connection_update_task_details): \OpenAPIWebForm\Client\Model\Task
 ```
 
 Update a bank connection
@@ -26,16 +26,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AccountInformationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\AccountInformationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$bank_connection_update_task_details = new \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails(); // \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails
+$bank_connection_update_task_details = new \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails(); // \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails
 
 try {
     $result = $apiInstance->createBankConnectionUpdateTask($bank_connection_update_task_details);
@@ -49,11 +49,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **bank_connection_update_task_details** | [**\OpenAPI\Client\Model\BankConnectionUpdateTaskDetails**](../Model/BankConnectionUpdateTaskDetails.md)|  | |
+| **bank_connection_update_task_details** | [**\OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails**](../Model/BankConnectionUpdateTaskDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Task**](../Model/Task.md)
+[**\OpenAPIWebForm\Client\Model\Task**](../Model/Task.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ try {
 ## `createForBankConnectionImport()`
 
 ```php
-createForBankConnectionImport($bank_connection_import_details): \OpenAPI\Client\Model\WebForm
+createForBankConnectionImport($bank_connection_import_details): \OpenAPIWebForm\Client\Model\WebForm
 ```
 
 Import a bank connection
@@ -86,16 +86,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\AccountInformationServicesApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\AccountInformationServicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$bank_connection_import_details = new \OpenAPI\Client\Model\BankConnectionImportDetails(); // \OpenAPI\Client\Model\BankConnectionImportDetails
+$bank_connection_import_details = new \OpenAPIWebForm\Client\Model\BankConnectionImportDetails(); // \OpenAPIWebForm\Client\Model\BankConnectionImportDetails
 
 try {
     $result = $apiInstance->createForBankConnectionImport($bank_connection_import_details);
@@ -109,11 +109,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **bank_connection_import_details** | [**\OpenAPI\Client\Model\BankConnectionImportDetails**](../Model/BankConnectionImportDetails.md)|  | |
+| **bank_connection_import_details** | [**\OpenAPIWebForm\Client\Model\BankConnectionImportDetails**](../Model/BankConnectionImportDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\WebForm**](../Model/WebForm.md)
+[**\OpenAPIWebForm\Client\Model\WebForm**](../Model/WebForm.md)
 
 ### Authorization
 

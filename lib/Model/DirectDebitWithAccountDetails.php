@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * DirectDebitWithAccountDetails Class Doc Comment
  *
  * @category Class
  * @description Parameters for a direct debit with an account
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,13 +58,13 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'orders' => '\OpenAPI\Client\Model\DirectDebitOrder[]',
+        'orders' => '\OpenAPIWebForm\Client\Model\DirectDebitOrder[]',
         'execution_date' => '\DateTime',
         'batch_booking_preferred' => 'bool',
         'profile_id' => 'string',
         'redirect_url' => 'string',
-        'callbacks' => '\OpenAPI\Client\Model\Callbacks',
-        'receiver' => '\OpenAPI\Client\Model\DirectDebitWithAccountReceiver',
+        'callbacks' => '\OpenAPIWebForm\Client\Model\Callbacks',
+        'receiver' => '\OpenAPIWebForm\Client\Model\DirectDebitWithAccountReceiver',
         'direct_debit_type' => 'string',
         'sequence_type' => 'string'
     ];
@@ -444,7 +444,7 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets orders
      *
-     * @return \OpenAPI\Client\Model\DirectDebitOrder[]
+     * @return \OpenAPIWebForm\Client\Model\DirectDebitOrder[]
      */
     public function getOrders()
     {
@@ -454,7 +454,7 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets orders
      *
-     * @param \OpenAPI\Client\Model\DirectDebitOrder[] $orders Direct debit orders
+     * @param \OpenAPIWebForm\Client\Model\DirectDebitOrder[] $orders Direct debit orders
      *
      * @return self
      */
@@ -624,7 +624,7 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets callbacks
      *
-     * @return \OpenAPI\Client\Model\Callbacks|null
+     * @return \OpenAPIWebForm\Client\Model\Callbacks|null
      */
     public function getCallbacks()
     {
@@ -634,7 +634,7 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets callbacks
      *
-     * @param \OpenAPI\Client\Model\Callbacks|null $callbacks callbacks
+     * @param \OpenAPIWebForm\Client\Model\Callbacks|null $callbacks callbacks
      *
      * @return self
      */
@@ -658,7 +658,7 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets receiver
      *
-     * @return \OpenAPI\Client\Model\DirectDebitWithAccountReceiver
+     * @return \OpenAPIWebForm\Client\Model\DirectDebitWithAccountReceiver
      */
     public function getReceiver()
     {
@@ -668,7 +668,7 @@ class DirectDebitWithAccountDetails implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets receiver
      *
-     * @param \OpenAPI\Client\Model\DirectDebitWithAccountReceiver $receiver receiver
+     * @param \OpenAPIWebForm\Client\Model\DirectDebitWithAccountReceiver $receiver receiver
      *
      * @return self
      */

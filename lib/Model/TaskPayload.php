@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * TaskPayload Class Doc Comment
  *
  * @category Class
  * @description Payload of the task
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class TaskPayload implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'bank_connection_id' => 'int',
-        'web_form' => '\OpenAPI\Client\Model\WebFormInfo',
+        'web_form' => '\OpenAPIWebForm\Client\Model\WebFormInfo',
         'error_code' => 'string'
     ];
 
@@ -365,7 +365,7 @@ class TaskPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets web_form
      *
-     * @return \OpenAPI\Client\Model\WebFormInfo|null
+     * @return \OpenAPIWebForm\Client\Model\WebFormInfo|null
      */
     public function getWebForm()
     {
@@ -375,7 +375,7 @@ class TaskPayload implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets web_form
      *
-     * @param \OpenAPI\Client\Model\WebFormInfo|null $web_form web_form
+     * @param \OpenAPIWebForm\Client\Model\WebFormInfo|null $web_form web_form
      *
      * @return self
      */

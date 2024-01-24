@@ -1,4 +1,4 @@
-# OpenAPI\Client\TasksApi
+# OpenAPIWebForm\Client\TasksApi
 
 All URIs are relative to https://webform-sandbox.finapi.io, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://webform-sandbox.finapi.io, except if the operat
 ## `getTask()`
 
 ```php
-getTask($id): \OpenAPI\Client\Model\Task
+getTask($id): \OpenAPIWebForm\Client\Model\Task
 ```
 
 Get a task
@@ -26,10 +26,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TasksApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Task**](../Model/Task.md)
+[**\OpenAPIWebForm\Client\Model\Task**](../Model/Task.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ try {
 ## `getTasks()`
 
 ```php
-getTasks($order, $page, $per_page): \OpenAPI\Client\Model\TasksPage
+getTasks($order, $page, $per_page): \OpenAPIWebForm\Client\Model\TasksPage
 ```
 
 Get tasks
@@ -86,10 +86,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\TasksApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\TasksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TasksPage**](../Model/TasksPage.md)
+[**\OpenAPIWebForm\Client\Model\TasksPage**](../Model/TasksPage.md)
 
 ### Authorization
 

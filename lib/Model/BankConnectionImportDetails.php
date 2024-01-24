@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * BankConnectionImportDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,15 +57,15 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bank' => '\OpenAPI\Client\Model\ImportBankDetails',
+        'bank' => '\OpenAPIWebForm\Client\Model\ImportBankDetails',
         'bank_connection_name' => 'string',
         'skip_balances_download' => 'bool',
         'skip_positions_download' => 'bool',
         'load_owner_data' => 'bool',
         'max_days_for_download' => 'int',
-        'account_types' => '\OpenAPI\Client\Model\AccountType[]',
+        'account_types' => '\OpenAPIWebForm\Client\Model\AccountType[]',
         'allowed_interfaces' => 'string[]',
-        'callbacks' => '\OpenAPI\Client\Model\Callbacks',
+        'callbacks' => '\OpenAPIWebForm\Client\Model\Callbacks',
         'profile_id' => 'string',
         'redirect_url' => 'string',
         'allow_test_bank' => 'bool'
@@ -418,7 +418,7 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets bank
      *
-     * @return \OpenAPI\Client\Model\ImportBankDetails|null
+     * @return \OpenAPIWebForm\Client\Model\ImportBankDetails|null
      */
     public function getBank()
     {
@@ -428,7 +428,7 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets bank
      *
-     * @param \OpenAPI\Client\Model\ImportBankDetails|null $bank bank
+     * @param \OpenAPIWebForm\Client\Model\ImportBankDetails|null $bank bank
      *
      * @return self
      */
@@ -634,7 +634,7 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets account_types
      *
-     * @return \OpenAPI\Client\Model\AccountType[]|null
+     * @return \OpenAPIWebForm\Client\Model\AccountType[]|null
      */
     public function getAccountTypes()
     {
@@ -644,7 +644,7 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets account_types
      *
-     * @param \OpenAPI\Client\Model\AccountType[]|null $account_types A set of account types that are considered for the import. If no values is given, then all accounts will be imported.<br/>This parameter refers to the same parameter of the \"<a target='_blank' href='https://docs.finapi.io/?product=access#post-/api/v1/bankConnections/import'>Import a new bank connection</a>\" service in the finAPI Access API.
+     * @param \OpenAPIWebForm\Client\Model\AccountType[]|null $account_types A set of account types that are considered for the import. If no values is given, then all accounts will be imported.<br/>This parameter refers to the same parameter of the \"<a target='_blank' href='https://docs.finapi.io/?product=access#post-/api/v1/bankConnections/import'>Import a new bank connection</a>\" service in the finAPI Access API.
      *
      * @return self
      */
@@ -715,7 +715,7 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets callbacks
      *
-     * @return \OpenAPI\Client\Model\Callbacks|null
+     * @return \OpenAPIWebForm\Client\Model\Callbacks|null
      */
     public function getCallbacks()
     {
@@ -725,7 +725,7 @@ class BankConnectionImportDetails implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets callbacks
      *
-     * @param \OpenAPI\Client\Model\Callbacks|null $callbacks callbacks
+     * @param \OpenAPIWebForm\Client\Model\Callbacks|null $callbacks callbacks
      *
      * @return self
      */

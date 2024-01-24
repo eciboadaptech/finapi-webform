@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * TranslationSetsPage Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class TranslationSetsPage implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\OpenAPI\Client\Model\TranslationSet[]',
-        'paging' => '\OpenAPI\Client\Model\Paging'
+        'items' => '\OpenAPIWebForm\Client\Model\TranslationSet[]',
+        'paging' => '\OpenAPIWebForm\Client\Model\Paging'
     ];
 
     /**
@@ -313,7 +313,7 @@ class TranslationSetsPage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets items
      *
-     * @return \OpenAPI\Client\Model\TranslationSet[]
+     * @return \OpenAPIWebForm\Client\Model\TranslationSet[]
      */
     public function getItems()
     {
@@ -323,7 +323,7 @@ class TranslationSetsPage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets items
      *
-     * @param \OpenAPI\Client\Model\TranslationSet[] $items Page of resources
+     * @param \OpenAPIWebForm\Client\Model\TranslationSet[] $items Page of resources
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class TranslationSetsPage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets paging
      *
-     * @return \OpenAPI\Client\Model\Paging
+     * @return \OpenAPIWebForm\Client\Model\Paging
      */
     public function getPaging()
     {
@@ -357,7 +357,7 @@ class TranslationSetsPage implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets paging
      *
-     * @param \OpenAPI\Client\Model\Paging $paging paging
+     * @param \OpenAPIWebForm\Client\Model\Paging $paging paging
      *
      * @return self
      */

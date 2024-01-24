@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Color Class Doc Comment
  *
  * @category Class
  * @description The color scheme to be applied through the web form
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class Color implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'brand' => 'string',
         'secondary' => 'string',
-        'text' => '\OpenAPI\Client\Model\TextColor'
+        'text' => '\OpenAPIWebForm\Client\Model\TextColor'
     ];
 
     /**
@@ -393,7 +393,7 @@ class Color implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets text
      *
-     * @return \OpenAPI\Client\Model\TextColor|null
+     * @return \OpenAPIWebForm\Client\Model\TextColor|null
      */
     public function getText()
     {
@@ -403,7 +403,7 @@ class Color implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets text
      *
-     * @param \OpenAPI\Client\Model\TextColor|null $text text
+     * @param \OpenAPIWebForm\Client\Model\TextColor|null $text text
      *
      * @return self
      */

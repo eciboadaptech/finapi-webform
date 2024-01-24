@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Brand Class Doc Comment
  *
  * @category Class
  * @description Customization related to branding
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class Brand implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'logo' => 'string',
         'favicon' => 'string',
-        'icon' => '\OpenAPI\Client\Model\Icon',
+        'icon' => '\OpenAPIWebForm\Client\Model\Icon',
         'intro_text' => 'string'
     ];
 
@@ -434,7 +434,7 @@ class Brand implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets icon
      *
-     * @return \OpenAPI\Client\Model\Icon|null
+     * @return \OpenAPIWebForm\Client\Model\Icon|null
      */
     public function getIcon()
     {
@@ -444,7 +444,7 @@ class Brand implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets icon
      *
-     * @param \OpenAPI\Client\Model\Icon|null $icon icon
+     * @param \OpenAPIWebForm\Client\Model\Icon|null $icon icon
      *
      * @return self
      */

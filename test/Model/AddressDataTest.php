@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace OpenAPI\Client\Test\Model;
+namespace OpenAPIWebForm\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description The address data of the counterparty.&lt;br/&gt;&lt;br/&gt;These address fields are only relevant in very few cases if the debtor bank requires the counterparty&#39;s address.&lt;br/&gt;Please refer to the &lt;a href&#x3D;&#39;https://documentation.finapi.io/payments/czech-republic-sepa-transfers&#39; target&#x3D;&#39;_blank&#39;&gt;Czech Republic SEPA Transfers documentation&lt;/a&gt; for more details.
- * @package     OpenAPI\Client
+ * @package     OpenAPIWebForm\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

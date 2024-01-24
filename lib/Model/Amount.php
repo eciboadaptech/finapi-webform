@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * Amount Class Doc Comment
  *
  * @category Class
  * @description Amount details
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class Amount implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'value' => 'float',
-        'currency' => '\OpenAPI\Client\Model\Currency'
+        'currency' => '\OpenAPIWebForm\Client\Model\Currency'
     ];
 
     /**
@@ -333,7 +333,7 @@ class Amount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets currency
      *
-     * @return \OpenAPI\Client\Model\Currency
+     * @return \OpenAPIWebForm\Client\Model\Currency
      */
     public function getCurrency()
     {
@@ -343,7 +343,7 @@ class Amount implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets currency
      *
-     * @param \OpenAPI\Client\Model\Currency $currency currency
+     * @param \OpenAPIWebForm\Client\Model\Currency $currency currency
      *
      * @return self
      */

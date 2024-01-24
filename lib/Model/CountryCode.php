@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace OpenAPIWebForm\Client\Model;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * CountryCode Class Doc Comment
  *
  * @category Class
  * @description &lt;strong&gt;Country code:&lt;/strong&gt; The ISO 3166 ALPHA-2 country code of the counterparty&#39;s address.
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

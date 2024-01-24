@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,15 +26,15 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
-use \OpenAPI\Client\ObjectSerializer;
+namespace OpenAPIWebForm\Client\Model;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * WebFormType Class Doc Comment
  *
  * @category Class
  * @description &lt;strong&gt;Web form type:&lt;/strong&gt;&lt;br/&gt;&amp;bull; &lt;code&gt;BANK_CONNECTION_IMPORT&lt;/code&gt; - web form was created for importing a bank connection (service \&quot;&lt;a href&#x3D;&#39;#post-/api/webForms/bankConnectionImport&#39;&gt;Import a bank connection&lt;/a&gt;\&quot;);&lt;br/&gt;&amp;bull; &lt;code&gt;BANK_CONNECTION_UPDATE&lt;/code&gt; - web form was created for updating a bank connection (service \&quot;&lt;a href&#x3D;&#39;#post-/api/tasks/backgroundUpdate&#39;&gt;Update a bank connection&lt;/a&gt;\&quot;);&lt;br/&gt;&amp;bull; &lt;code&gt;PAYMENT_WITH_ACCOUNT_ID&lt;/code&gt; - web form was created for a payment from an account that already exists in Access (service \&quot;&lt;a href&#x3D;&#39;#post-/api/webForms/paymentWithAccountId&#39;&gt;Create a payment with account ID&lt;/a&gt;\&quot;);&lt;br/&gt;&amp;bull; &lt;code&gt;STANDALONE_PAYMENT&lt;/code&gt; - web form was created for a standalone payment (service \&quot;&lt;a href&#x3D;&#39;#post-/api/webForms/standalonePayment&#39;&gt;Create a standalone payment&lt;/a&gt;\&quot;);&lt;br/&gt;&amp;bull; &lt;code&gt;DIRECT_DEBIT_WITH_ACCOUNT_ID&lt;/code&gt; - web form was created for a direct debit from an account that already exists in Access (service \&quot;&lt;a href&#x3D;&#39;#post-/api/webForms/directDebitWithAccountId&#39;&gt;Create a direct debit with account ID&lt;/a&gt;\&quot;);&lt;br/&gt;&amp;bull; &lt;code&gt;STANDING_ORDER&lt;/code&gt; - web form was created for a standing order (service \&quot;&lt;a href&#x3D;&#39;#post-/api/webForms/standingOrder&#39;&gt;Create a standing order&lt;/a&gt;\&quot;).
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

@@ -1,4 +1,4 @@
-# OpenAPI\Client\CustomisationTranslationsBETAApi
+# OpenAPIWebForm\Client\CustomisationTranslationsBETAApi
 
 All URIs are relative to https://webform-sandbox.finapi.io, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://webform-sandbox.finapi.io, except if the operat
 ## `createTranslation()`
 
 ```php
-createTranslation($create_translation_details): \OpenAPI\Client\Model\TranslationSet
+createTranslation($create_translation_details): \OpenAPIWebForm\Client\Model\TranslationSet
 ```
 
 Create a translation (BETA)
@@ -28,16 +28,16 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationTranslationsBETAApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationTranslationsBETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$create_translation_details = new \OpenAPI\Client\Model\CreateTranslationDetails(); // \OpenAPI\Client\Model\CreateTranslationDetails
+$create_translation_details = new \OpenAPIWebForm\Client\Model\CreateTranslationDetails(); // \OpenAPIWebForm\Client\Model\CreateTranslationDetails
 
 try {
     $result = $apiInstance->createTranslation($create_translation_details);
@@ -51,11 +51,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **create_translation_details** | [**\OpenAPI\Client\Model\CreateTranslationDetails**](../Model/CreateTranslationDetails.md)|  | |
+| **create_translation_details** | [**\OpenAPIWebForm\Client\Model\CreateTranslationDetails**](../Model/CreateTranslationDetails.md)|  | |
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TranslationSet**](../Model/TranslationSet.md)
+[**\OpenAPIWebForm\Client\Model\TranslationSet**](../Model/TranslationSet.md)
 
 ### Authorization
 
@@ -88,10 +88,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationTranslationsBETAApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationTranslationsBETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -132,7 +132,7 @@ void (empty response body)
 ## `getTranslation()`
 
 ```php
-getTranslation($id): \OpenAPI\Client\Model\TranslationSet
+getTranslation($id): \OpenAPIWebForm\Client\Model\TranslationSet
 ```
 
 Get a translation (BETA)
@@ -147,10 +147,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationTranslationsBETAApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationTranslationsBETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -174,7 +174,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TranslationSet**](../Model/TranslationSet.md)
+[**\OpenAPIWebForm\Client\Model\TranslationSet**](../Model/TranslationSet.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ try {
 ## `getTranslations()`
 
 ```php
-getTranslations($page, $per_page): \OpenAPI\Client\Model\TranslationSetsPage
+getTranslations($page, $per_page): \OpenAPIWebForm\Client\Model\TranslationSetsPage
 ```
 
 Get translations (BETA)
@@ -207,10 +207,10 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 // Configure OAuth2 access token for authorization: BearerAccessToken
-$config = OpenAPI\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = OpenAPIWebForm\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
 
-$apiInstance = new OpenAPI\Client\Api\CustomisationTranslationsBETAApi(
+$apiInstance = new OpenAPIWebForm\Client\Api\CustomisationTranslationsBETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -236,7 +236,7 @@ try {
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TranslationSetsPage**](../Model/TranslationSetsPage.md)
+[**\OpenAPIWebForm\Client\Model\TranslationSetsPage**](../Model/TranslationSetsPage.md)
 
 ### Authorization
 

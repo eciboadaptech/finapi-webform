@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * StandalonePaymentDetails Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,14 +57,14 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'orders' => '\OpenAPI\Client\Model\StandalonePaymentOrder[]',
+        'orders' => '\OpenAPIWebForm\Client\Model\StandalonePaymentOrder[]',
         'execution_date' => '\DateTime',
         'batch_booking_preferred' => 'bool',
         'instant_payment' => 'bool',
         'profile_id' => 'string',
         'redirect_url' => 'string',
-        'callbacks' => '\OpenAPI\Client\Model\Callbacks',
-        'sender' => '\OpenAPI\Client\Model\Sender',
+        'callbacks' => '\OpenAPIWebForm\Client\Model\Callbacks',
+        'sender' => '\OpenAPIWebForm\Client\Model\Sender',
         'allow_test_bank' => 'bool'
     ];
 
@@ -379,7 +379,7 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets orders
      *
-     * @return \OpenAPI\Client\Model\StandalonePaymentOrder[]
+     * @return \OpenAPIWebForm\Client\Model\StandalonePaymentOrder[]
      */
     public function getOrders()
     {
@@ -389,7 +389,7 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets orders
      *
-     * @param \OpenAPI\Client\Model\StandalonePaymentOrder[] $orders Payment orders
+     * @param \OpenAPIWebForm\Client\Model\StandalonePaymentOrder[] $orders Payment orders
      *
      * @return self
      */
@@ -593,7 +593,7 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets callbacks
      *
-     * @return \OpenAPI\Client\Model\Callbacks|null
+     * @return \OpenAPIWebForm\Client\Model\Callbacks|null
      */
     public function getCallbacks()
     {
@@ -603,7 +603,7 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets callbacks
      *
-     * @param \OpenAPI\Client\Model\Callbacks|null $callbacks callbacks
+     * @param \OpenAPIWebForm\Client\Model\Callbacks|null $callbacks callbacks
      *
      * @return self
      */
@@ -627,7 +627,7 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets sender
      *
-     * @return \OpenAPI\Client\Model\Sender|null
+     * @return \OpenAPIWebForm\Client\Model\Sender|null
      */
     public function getSender()
     {
@@ -637,7 +637,7 @@ class StandalonePaymentDetails implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets sender
      *
-     * @param \OpenAPI\Client\Model\Sender|null $sender sender
+     * @param \OpenAPIWebForm\Client\Model\Sender|null $sender sender
      *
      * @return self
      */

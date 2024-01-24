@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace OpenAPIWebForm\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use OpenAPIWebForm\Client\ApiException;
+use OpenAPIWebForm\Client\Configuration;
+use OpenAPIWebForm\Client\HeaderSelector;
+use OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * CustomisationTranslationsBETAApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,12 +136,12 @@ class CustomisationTranslationsBETAApi
      *
      * Create a translation (BETA)
      *
-     * @param  \OpenAPI\Client\Model\CreateTranslationDetails $create_translation_details create_translation_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateTranslationDetails $create_translation_details create_translation_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TranslationSet|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error
+     * @return \OpenAPIWebForm\Client\Model\TranslationSet|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error
      */
     public function createTranslation($create_translation_details, string $contentType = self::contentTypes['createTranslation'][0])
     {
@@ -154,12 +154,12 @@ class CustomisationTranslationsBETAApi
      *
      * Create a translation (BETA)
      *
-     * @param  \OpenAPI\Client\Model\CreateTranslationDetails $create_translation_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateTranslationDetails $create_translation_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TranslationSet|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\TranslationSet|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createTranslationWithHttpInfo($create_translation_details, string $contentType = self::contentTypes['createTranslation'][0])
     {
@@ -202,98 +202,98 @@ class CustomisationTranslationsBETAApi
 
             switch($statusCode) {
                 case 201:
-                    if ('\OpenAPI\Client\Model\TranslationSet' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\TranslationSet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TranslationSet' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\TranslationSet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TranslationSet', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\TranslationSet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\TranslationSet';
+            $returnType = '\OpenAPIWebForm\Client\Model\TranslationSet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -314,7 +314,7 @@ class CustomisationTranslationsBETAApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TranslationSet',
+                        '\OpenAPIWebForm\Client\Model\TranslationSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -322,7 +322,7 @@ class CustomisationTranslationsBETAApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -330,7 +330,7 @@ class CustomisationTranslationsBETAApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -338,7 +338,7 @@ class CustomisationTranslationsBETAApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -346,7 +346,7 @@ class CustomisationTranslationsBETAApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -354,7 +354,7 @@ class CustomisationTranslationsBETAApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -369,7 +369,7 @@ class CustomisationTranslationsBETAApi
      *
      * Create a translation (BETA)
      *
-     * @param  \OpenAPI\Client\Model\CreateTranslationDetails $create_translation_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateTranslationDetails $create_translation_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTranslation'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -390,7 +390,7 @@ class CustomisationTranslationsBETAApi
      *
      * Create a translation (BETA)
      *
-     * @param  \OpenAPI\Client\Model\CreateTranslationDetails $create_translation_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateTranslationDetails $create_translation_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTranslation'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -398,7 +398,7 @@ class CustomisationTranslationsBETAApi
      */
     public function createTranslationAsyncWithHttpInfo($create_translation_details, string $contentType = self::contentTypes['createTranslation'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TranslationSet';
+        $returnType = '\OpenAPIWebForm\Client\Model\TranslationSet';
         $request = $this->createTranslationRequest($create_translation_details, $contentType);
 
         return $this->client
@@ -440,7 +440,7 @@ class CustomisationTranslationsBETAApi
     /**
      * Create request for operation 'createTranslation'
      *
-     * @param  \OpenAPI\Client\Model\CreateTranslationDetails $create_translation_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\CreateTranslationDetails $create_translation_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createTranslation'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -540,7 +540,7 @@ class CustomisationTranslationsBETAApi
      * @param  string $id Identifier of the translation (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -557,7 +557,7 @@ class CustomisationTranslationsBETAApi
      * @param  string $id Identifier of the translation (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -607,7 +607,7 @@ class CustomisationTranslationsBETAApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -615,7 +615,7 @@ class CustomisationTranslationsBETAApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -623,7 +623,7 @@ class CustomisationTranslationsBETAApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -797,9 +797,9 @@ class CustomisationTranslationsBETAApi
      * @param  string $id Identifier of the translation (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TranslationSet|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error
+     * @return \OpenAPIWebForm\Client\Model\TranslationSet|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error
      */
     public function getTranslation($id, string $contentType = self::contentTypes['getTranslation'][0])
     {
@@ -815,9 +815,9 @@ class CustomisationTranslationsBETAApi
      * @param  string $id Identifier of the translation (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTranslation'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TranslationSet|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\TranslationSet|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTranslationWithHttpInfo($id, string $contentType = self::contentTypes['getTranslation'][0])
     {
@@ -860,68 +860,68 @@ class CustomisationTranslationsBETAApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TranslationSet' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\TranslationSet' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TranslationSet' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\TranslationSet' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TranslationSet', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\TranslationSet', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\TranslationSet';
+            $returnType = '\OpenAPIWebForm\Client\Model\TranslationSet';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -942,7 +942,7 @@ class CustomisationTranslationsBETAApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TranslationSet',
+                        '\OpenAPIWebForm\Client\Model\TranslationSet',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -950,7 +950,7 @@ class CustomisationTranslationsBETAApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -958,7 +958,7 @@ class CustomisationTranslationsBETAApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -966,7 +966,7 @@ class CustomisationTranslationsBETAApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1010,7 +1010,7 @@ class CustomisationTranslationsBETAApi
      */
     public function getTranslationAsyncWithHttpInfo($id, string $contentType = self::contentTypes['getTranslation'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TranslationSet';
+        $returnType = '\OpenAPIWebForm\Client\Model\TranslationSet';
         $request = $this->getTranslationRequest($id, $contentType);
 
         return $this->client
@@ -1154,9 +1154,9 @@ class CustomisationTranslationsBETAApi
      * @param  int $per_page The number of items on the page (optional, default to 20)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTranslations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\TranslationSetsPage|\OpenAPI\Client\Model\ValidationError
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\TranslationSetsPage|\OpenAPIWebForm\Client\Model\ValidationError
      */
     public function getTranslations($page = 1, $per_page = 20, string $contentType = self::contentTypes['getTranslations'][0])
     {
@@ -1173,9 +1173,9 @@ class CustomisationTranslationsBETAApi
      * @param  int $per_page The number of items on the page (optional, default to 20)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getTranslations'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\TranslationSetsPage|\OpenAPI\Client\Model\ValidationError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\TranslationSetsPage|\OpenAPIWebForm\Client\Model\ValidationError, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTranslationsWithHttpInfo($page = 1, $per_page = 20, string $contentType = self::contentTypes['getTranslations'][0])
     {
@@ -1218,68 +1218,68 @@ class CustomisationTranslationsBETAApi
 
             switch($statusCode) {
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 200:
-                    if ('\OpenAPI\Client\Model\TranslationSetsPage' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\TranslationSetsPage' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\TranslationSetsPage' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\TranslationSetsPage' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TranslationSetsPage', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\TranslationSetsPage', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\TranslationSetsPage';
+            $returnType = '\OpenAPIWebForm\Client\Model\TranslationSetsPage';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1300,7 +1300,7 @@ class CustomisationTranslationsBETAApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1308,7 +1308,7 @@ class CustomisationTranslationsBETAApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1316,7 +1316,7 @@ class CustomisationTranslationsBETAApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TranslationSetsPage',
+                        '\OpenAPIWebForm\Client\Model\TranslationSetsPage',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1324,7 +1324,7 @@ class CustomisationTranslationsBETAApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1370,7 +1370,7 @@ class CustomisationTranslationsBETAApi
      */
     public function getTranslationsAsyncWithHttpInfo($page = 1, $per_page = 20, string $contentType = self::contentTypes['getTranslations'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\TranslationSetsPage';
+        $returnType = '\OpenAPIWebForm\Client\Model\TranslationSetsPage';
         $request = $this->getTranslationsRequest($page, $per_page, $contentType);
 
         return $this->client

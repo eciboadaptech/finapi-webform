@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace OpenAPIWebForm\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * DirectDebitOrder Class Doc Comment
  *
  * @category Class
  * @description Direct debit order
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class DirectDebitOrder implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'payer' => '\OpenAPI\Client\Model\PaymentPayer',
-        'amount' => '\OpenAPI\Client\Model\Amount',
+        'payer' => '\OpenAPIWebForm\Client\Model\PaymentPayer',
+        'amount' => '\OpenAPIWebForm\Client\Model\Amount',
         'purpose' => 'string',
         'sepa_purpose_code' => 'string',
         'end_to_end_id' => 'string',
@@ -393,7 +393,7 @@ class DirectDebitOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payer
      *
-     * @return \OpenAPI\Client\Model\PaymentPayer
+     * @return \OpenAPIWebForm\Client\Model\PaymentPayer
      */
     public function getPayer()
     {
@@ -403,7 +403,7 @@ class DirectDebitOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payer
      *
-     * @param \OpenAPI\Client\Model\PaymentPayer $payer payer
+     * @param \OpenAPIWebForm\Client\Model\PaymentPayer $payer payer
      *
      * @return self
      */
@@ -420,7 +420,7 @@ class DirectDebitOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets amount
      *
-     * @return \OpenAPI\Client\Model\Amount
+     * @return \OpenAPIWebForm\Client\Model\Amount
      */
     public function getAmount()
     {
@@ -430,7 +430,7 @@ class DirectDebitOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets amount
      *
-     * @param \OpenAPI\Client\Model\Amount $amount amount
+     * @param \OpenAPIWebForm\Client\Model\Amount $amount amount
      *
      * @return self
      */

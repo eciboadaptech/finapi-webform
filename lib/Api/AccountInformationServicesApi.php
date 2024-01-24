@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace OpenAPIWebForm\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use OpenAPIWebForm\Client\ApiException;
+use OpenAPIWebForm\Client\Configuration;
+use OpenAPIWebForm\Client\HeaderSelector;
+use OpenAPIWebForm\Client\ObjectSerializer;
 
 /**
  * AccountInformationServicesApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  OpenAPIWebForm\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,12 +130,12 @@ class AccountInformationServicesApi
      *
      * Update a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details bank_connection_update_task_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details bank_connection_update_task_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createBankConnectionUpdateTask'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Task|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Task|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error
      */
     public function createBankConnectionUpdateTask($bank_connection_update_task_details, string $contentType = self::contentTypes['createBankConnectionUpdateTask'][0])
     {
@@ -148,12 +148,12 @@ class AccountInformationServicesApi
      *
      * Update a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createBankConnectionUpdateTask'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Task|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Task|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error, HTTP status code, HTTP response headers (array of strings)
      */
     public function createBankConnectionUpdateTaskWithHttpInfo($bank_connection_update_task_details, string $contentType = self::contentTypes['createBankConnectionUpdateTask'][0])
     {
@@ -196,128 +196,128 @@ class AccountInformationServicesApi
 
             switch($statusCode) {
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 423:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 201:
-                    if ('\OpenAPI\Client\Model\Task' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Task' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Task' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Task' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Task', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Task', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Task';
+            $returnType = '\OpenAPIWebForm\Client\Model\Task';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -338,7 +338,7 @@ class AccountInformationServicesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -346,7 +346,7 @@ class AccountInformationServicesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -354,7 +354,7 @@ class AccountInformationServicesApi
                 case 423:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -362,7 +362,7 @@ class AccountInformationServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Task',
+                        '\OpenAPIWebForm\Client\Model\Task',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -370,7 +370,7 @@ class AccountInformationServicesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -378,7 +378,7 @@ class AccountInformationServicesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -386,7 +386,7 @@ class AccountInformationServicesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -394,7 +394,7 @@ class AccountInformationServicesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -409,7 +409,7 @@ class AccountInformationServicesApi
      *
      * Update a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createBankConnectionUpdateTask'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -430,7 +430,7 @@ class AccountInformationServicesApi
      *
      * Update a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createBankConnectionUpdateTask'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -438,7 +438,7 @@ class AccountInformationServicesApi
      */
     public function createBankConnectionUpdateTaskAsyncWithHttpInfo($bank_connection_update_task_details, string $contentType = self::contentTypes['createBankConnectionUpdateTask'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\Task';
+        $returnType = '\OpenAPIWebForm\Client\Model\Task';
         $request = $this->createBankConnectionUpdateTaskRequest($bank_connection_update_task_details, $contentType);
 
         return $this->client
@@ -480,7 +480,7 @@ class AccountInformationServicesApi
     /**
      * Create request for operation 'createBankConnectionUpdateTask'
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionUpdateTaskDetails $bank_connection_update_task_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createBankConnectionUpdateTask'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -577,12 +577,12 @@ class AccountInformationServicesApi
      *
      * Import a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionImportDetails $bank_connection_import_details bank_connection_import_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionImportDetails $bank_connection_import_details bank_connection_import_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createForBankConnectionImport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\WebForm
+     * @return \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\WebForm
      */
     public function createForBankConnectionImport($bank_connection_import_details, string $contentType = self::contentTypes['createForBankConnectionImport'][0])
     {
@@ -595,12 +595,12 @@ class AccountInformationServicesApi
      *
      * Import a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createForBankConnectionImport'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \OpenAPIWebForm\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\ValidationError|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\Error|\OpenAPI\Client\Model\WebForm, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\ValidationError|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\Error|\OpenAPIWebForm\Client\Model\WebForm, HTTP status code, HTTP response headers (array of strings)
      */
     public function createForBankConnectionImportWithHttpInfo($bank_connection_import_details, string $contentType = self::contentTypes['createForBankConnectionImport'][0])
     {
@@ -643,113 +643,113 @@ class AccountInformationServicesApi
 
             switch($statusCode) {
                 case 403:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\ValidationError' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\ValidationError' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\ValidationError' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\ValidationError' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationError', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\ValidationError', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 422:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 500:
-                    if ('\OpenAPI\Client\Model\Error' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\Error' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\Error' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\Error' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Error', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\Error', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 201:
-                    if ('\OpenAPI\Client\Model\WebForm' === '\SplFileObject') {
+                    if ('\OpenAPIWebForm\Client\Model\WebForm' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\WebForm' !== 'string') {
+                        if ('\OpenAPIWebForm\Client\Model\WebForm' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\WebForm', []),
+                        ObjectSerializer::deserialize($content, '\OpenAPIWebForm\Client\Model\WebForm', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\WebForm';
+            $returnType = '\OpenAPIWebForm\Client\Model\WebForm';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -770,7 +770,7 @@ class AccountInformationServicesApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -778,7 +778,7 @@ class AccountInformationServicesApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationError',
+                        '\OpenAPIWebForm\Client\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -786,7 +786,7 @@ class AccountInformationServicesApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -794,7 +794,7 @@ class AccountInformationServicesApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -802,7 +802,7 @@ class AccountInformationServicesApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -810,7 +810,7 @@ class AccountInformationServicesApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Error',
+                        '\OpenAPIWebForm\Client\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -818,7 +818,7 @@ class AccountInformationServicesApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\WebForm',
+                        '\OpenAPIWebForm\Client\Model\WebForm',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -833,7 +833,7 @@ class AccountInformationServicesApi
      *
      * Import a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createForBankConnectionImport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -854,7 +854,7 @@ class AccountInformationServicesApi
      *
      * Import a bank connection
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createForBankConnectionImport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -862,7 +862,7 @@ class AccountInformationServicesApi
      */
     public function createForBankConnectionImportAsyncWithHttpInfo($bank_connection_import_details, string $contentType = self::contentTypes['createForBankConnectionImport'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\WebForm';
+        $returnType = '\OpenAPIWebForm\Client\Model\WebForm';
         $request = $this->createForBankConnectionImportRequest($bank_connection_import_details, $contentType);
 
         return $this->client
@@ -904,7 +904,7 @@ class AccountInformationServicesApi
     /**
      * Create request for operation 'createForBankConnectionImport'
      *
-     * @param  \OpenAPI\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
+     * @param  \OpenAPIWebForm\Client\Model\BankConnectionImportDetails $bank_connection_import_details (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['createForBankConnectionImport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
